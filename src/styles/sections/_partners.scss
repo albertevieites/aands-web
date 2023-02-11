@@ -1,0 +1,25 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+// PARTNERS SECTION
+.partners {
+	display: flex;
+
+	max-width: 1200px;
+	margin: 0 auto 8em auto;
+	padding: 1em 0;
+  background-color: rgba(255, 255, 255, .9);
+	backdrop-filter: blur(1rem);
+	border-radius: 0.7rem;
+
+	&__container {
+		margin: 0 auto;
+		padding: 2em 0;
+
+		img {
+			width: 15rem;
+			height: auto;
+			margin-bottom: 0.2em;
+		}
+	}
+}

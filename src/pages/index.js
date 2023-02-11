@@ -1,5 +1,14 @@
-import Hero from '@/components/sections/Hero';
+// Import from node_modules
 import Head from 'next/head';
+
+// Components
+import Hero from '@/components/sections/Hero';
+import Partners from '@/components/sections/Partners';
+import Features from '@/components/sections/Features';
+import Social from '@/components/sections/Social';
+import Story from '@/components/sections/Story';
+import Team from '@/components/sections/Team';
+import Last from '@/components/sections/Last';
 
 export default function Home() {
 	return (
@@ -18,7 +27,26 @@ export default function Home() {
 				<link href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'></link>
 			</Head>
 			<main>
+				{/* Hero section */}
 				<Hero />
+
+				{/* Partners section */}
+				<Partners />
+
+				{/* Features section */}
+				<Features />
+
+				{/* Social section */}
+				<Social />
+
+				{/* Story section */}
+				<Story />
+
+				{/* Team section */}
+				<Team />
+
+				{/* Last action section */}
+				<Last />
 			</main>
 		</>
 	);

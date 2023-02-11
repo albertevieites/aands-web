@@ -1,0 +1,44 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+// LAST CALL TO ACTION SECTION
+.last {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 5em 0;
+
+	color: $clr-white;
+
+	h2 {
+		text-align: center;
+		line-height: .3em;
+	}
+
+	p {
+		width: 50rem;
+		margin: 0 auto;
+
+		font-size: $f-s-480;
+		font-weight: $f-w-300;
+		text-align: center;
+		line-height: 1.167em;
+		letter-spacing: 0.04rem;
+	}
+
+	&__container {
+		margin: 0 auto;
+		padding: 3em;
+		background-color: $clr-card;
+		border: 0.01rem solid $clr-border-card;
+		border-radius: 0.7rem;
+	}
+
+	&__text {
+		padding-top: 1rem;
+	}
+
+	&__button {
+		width: fit-content;
+		margin: 4rem auto 0 auto;
+	}
+}

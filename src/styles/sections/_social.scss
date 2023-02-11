@@ -1,0 +1,37 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+@use '../abstracts/variables' as *;
+
+// SOCIAL SECTION
+.social {
+  max-width: $max-width;
+	margin: 0 auto;
+	padding: 5em 0;
+
+	color: $clr-white;
+
+	div:first-child {
+		align-self: center;
+	}
+
+	div:last-child {
+		align-self: center;
+	}
+
+	h2 {
+		margin-bottom: 1em;
+	}
+
+	p {
+		white-space: pre-line;
+		vertical-align: bottom;
+	}
+
+	&__grid {
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+		gap: 1.5em;
+
+    max-width: 1200px;
+	}
+}
