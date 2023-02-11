@@ -2,13 +2,15 @@
 import Head from 'next/head';
 
 // Components
-import Hero from '../components/sections/Hero';
-import Partners from '../components/sections/Partners';
+import Line from 'src/components/tokens/Line';
+import Separator from 'src/components/tokens/Separator';
 import Features from '../components/sections/Features';
+import Hero from '../components/sections/Hero';
+import Last from '../components/sections/Last';
+import Partners from '../components/sections/Partners';
 import Social from '../components/sections/Social';
 import Story from '../components/sections/Story';
 import Team from '../components/sections/Team';
-import Last from '../components/sections/Last';
 
 export default function Home() {
 	return (
@@ -26,8 +28,14 @@ export default function Home() {
 				{/* Partners section */}
 				<Partners />
 
+				{/* Separator */}
+				<Separator />
+
 				{/* Features section */}
 				<Features />
+
+				{/* Separator */}
+				<Separator />
 
 				{/* Social section */}
 				<Social />
@@ -40,6 +48,9 @@ export default function Home() {
 
 				{/* Last action section */}
 				<Last />
+
+				{/* Line on the top of the footer */}
+				<Line />
 			</main>
 		</>
 	);
