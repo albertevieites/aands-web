@@ -4,19 +4,29 @@
         "es2021": true
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
+        "next/core-web-vitals",
         "standard",
         "eslint-config-prettier"
     ],
     "overrides": [],
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
         "react/prop-types": "off",
         "import/no-absolute-path": "off"

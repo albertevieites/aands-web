@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Components
-import CallBtn from '@/components/tokens/buttons/CallBtn';
+import CallBtn from '../tokens/buttons/CallBtn';
 
 // Images
 import brandIcon from '/public/icons/aands.svg';

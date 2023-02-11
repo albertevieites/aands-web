@@ -1,4 +1,4 @@
-import ButtonProducts from '@/components/tokens/buttons/ProductsBtn';
+import ButtonProducts from '../tokens/buttons/ProductsBtn';
 
 export default function Hero() {
 	return (

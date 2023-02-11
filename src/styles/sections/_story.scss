@@ -1,0 +1,20 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+@use '../abstracts/variables' as *;
+
+// STORY SECTION
+.story {
+  max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em 2em;
+
+	color: $clr-white;
+
+	background-image: url(../../../public/images/assets/story-pattern.svg);
+
+	h2 {
+		margin-bottom: 1em;
+
+		text-align: center;
+	}
+}

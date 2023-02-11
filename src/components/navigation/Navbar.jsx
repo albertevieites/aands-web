@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import brandLogo from '/public/icons/aands.svg';
 
-import ButtonContact from '@/components/tokens/buttons/ContactBtn';
+import ButtonContact from '../tokens/buttons/ContactBtn';
 
 export default function Navbar() {
 	return (

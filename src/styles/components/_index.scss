@@ -1,15 +1,17 @@
-/* @forward './cards/featureSmallCard';
-@forward './cards/featureLargeCard';
+/*
 @forward './cards/overlay';
 @forward './cards/productCard';
 @forward './cards/productDetails';
-@forward './cards/socialCard';
-@forward './cards/teamCard'; */
-
+*/
 @forward './layout/layout';
 
 @forward './navigation/footer';
 @forward './navigation/navbar';
+
+@forward './cards/featureSmallCard';
+@forward './cards/featureLargeCard';
+@forward './cards/socialCard';
+@forward './cards/teamCard'; 
 
 @forward './tokens/buttons/callBtn';
 @forward './tokens/buttons/contactBtn';
