@@ -1,4 +1,4 @@
-import TeamCard from "../cards/teamCard";
+import TeamCard from "../cards/TeamCard";
 
 export default function Team() {
   return (

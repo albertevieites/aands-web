@@ -1,4 +1,4 @@
-import SocialCard from "../cards/socialCard";
+import SocialCard from "../cards/SocialCard";
 
 export default function Social() {
   return (
