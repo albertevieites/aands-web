@@ -1,0 +1,32 @@
+/* @forward './cards/featureSmallCard';
+@forward './cards/featureLargeCard';
+@forward './cards/overlay';
+@forward './cards/productCard';
+@forward './cards/productDetails';
+@forward './cards/socialCard';
+@forward './cards/teamCard'; */
+
+@forward './layout/layout';
+
+@forward './navigation/footer';
+@forward './navigation/navbar';
+
+@forward './tokens/buttons/callBtn';
+@forward './tokens/buttons/contactBtn';
+@forward './tokens/buttons/productsBtn';
+
+/*
+@forward './sections/features';
+@forward './sections/hero';
+@forward './sections/last';
+@forward './sections/partners';
+@forward './sections/social';
+@forward './sections/story';
+@forward './sections/team';
+
+@forward './tokens/buttons/detailsBtn.scss';
+@forward './tokens/line';
+@forward './tokens/separator';
+
+@forward './utils/form';
+@forward './utils/map'; */

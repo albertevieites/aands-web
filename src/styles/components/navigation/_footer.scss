@@ -1,0 +1,107 @@
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/fonts' as *;
+@use '../../abstracts/variables' as *;
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 6em 0 2em;
+
+	color: $clr-white;
+	text-align: center;
+
+	h4 {
+		font-size: $f-s-600;
+		font-weight: $f-w-600;
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+
+		height: fit-content;
+
+		img {
+			width: 3rem;
+			height: auto;
+			margin: .5rem;
+		}
+
+		h4 {
+			color: $clr-light-grey;
+		}
+	}
+
+	&__here {
+		text-align: left;
+
+		h4 {
+			padding-bottom: 1em;
+		}
+
+		p {
+			font-size: $f-s-440;
+			color: $clr-light-grey;
+		}
+	}
+
+	&__talk {
+		text-align: left;
+
+		h4 {
+			padding-bottom: 1em;
+		}
+
+		p {
+			font-size: $f-s-440;
+			color: $clr-light-grey;
+		}
+	}
+
+	&__email {
+		padding-bottom: 1em;
+
+		font-size: $f-s-440;
+		color: $clr-light-grey;
+	}
+
+	&__social {
+		span {
+			font-size: $f-s-440;
+			color: $clr-light-grey;
+		}
+	}
+
+	&__icons {
+		display: flex;
+		gap: 1em;
+
+		img {
+			width: 1.3em;
+			height: auto;
+		}
+	}
+
+	&__sitemap {
+		text-align: left;
+
+		a {
+			padding-bottom: 0.3em;
+
+			font-size: $f-s-440;
+			color: $clr-light-grey;
+		}
+	}
+
+	&__links {
+		padding-bottom: 5em;
+	}
+
+	&__copy {
+		font-size: $f-s-340;
+		color: $clr-light-grey;
+	}
+}

@@ -1,0 +1,33 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+// HERO SECTION
+.hero {
+	max-width: 1200px;
+	margin: 0 auto 25em auto;
+
+	color: $clr-white;
+
+	h1 {
+		margin-bottom: 1.9rem;
+	}
+
+	p {
+		margin-bottom: 3em;
+
+		font-size: $f-s-560;
+		font-weight: $f-w-300;
+		line-height: 1.3em;
+		color: $clr-light-grey;
+
+		span {
+			font-weight: $f-w-600;
+		}
+	}
+
+	&__message {
+		margin-top: 5rem;
+
+		text-align: center;
+	}
+}

@@ -1,0 +1,39 @@
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/fonts' as *;
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 0;
+
+	color: $clr-white;
+
+	img {
+		height: auto;
+	}
+
+	a {
+		font-size: $f-s-420;
+	}
+
+	&__brand {
+		width: 5rem;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		gap: 2em;
+    align-items: center;
+
+    height: 100%;
+    padding-right: 2em;
+	}
+}

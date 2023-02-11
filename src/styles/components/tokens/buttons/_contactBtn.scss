@@ -1,0 +1,23 @@
+@use '../../../abstracts/colors' as *;
+@use '../../../abstracts/fonts' as *;
+
+.contact__btn {
+	padding: 0.7em 2.3em;
+	background-color: $clr-white;
+	border-radius: 0.2rem;
+  backdrop-filter: blur(1rem);
+
+	transition: all 0.2s ease-in-out;
+
+	span {
+		font-size: $f-s-420;
+		font-weight: $f-w-500;
+		color: $clr-background;
+	}
+
+	&:hover {
+		background-color: $clr-white;
+    -webkit-box-shadow: 0 0 1rem $clr-white;
+		box-shadow: 0 0 1rem $clr-white;
+	}
+}

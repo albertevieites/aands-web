@@ -1,0 +1,22 @@
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/fonts' as *;
+
+body {
+	background-color: $clr-background;
+
+	font-family: 'Inter', sans-serif;
+}
+
+h1 {
+	font-size: $f-s-2000;
+	font-weight: $f-w-500;
+	line-height: 1.1em;
+	letter-spacing: -0.02em;
+}
+
+h2 {
+	margin-bottom: 0.7em;
+
+	font-size: 3rem;
+	font-weight: $f-w-600;
+}
