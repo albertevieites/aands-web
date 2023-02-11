@@ -7,7 +7,8 @@
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "standard",
-        "eslint-config-prettier"
+        "eslint-config-prettier",
+        "eslint:recommended"
     ],
     "overrides": [],
     "parserOptions": {
@@ -17,6 +18,11 @@
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
         "react/prop-types": "off",
         "import/no-absolute-path": "off"
