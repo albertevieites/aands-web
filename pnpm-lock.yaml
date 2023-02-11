@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@next/eslint-plugin-next': ^13.1.6
   '@next/font': 13.1.6
   '@react-google-maps/api': ^2.18.1
   eslint: 8.34.0
@@ -28,6 +29,7 @@ dependencies:
   typescript: 4.9.5
 
 devDependencies:
+  '@next/eslint-plugin-next': 13.1.6
   eslint: 8.34.0
   eslint-config-prettier: 8.6.0_eslint@8.34.0
   eslint-config-standard: 17.0.0_rwq7hzy2vtlwiajbw6pmw3rkzy
@@ -101,7 +103,6 @@ packages:
     resolution: {integrity: sha512-o7cauUYsXjzSJkay8wKjpKJf2uLzlggCsGUkPu3lP09Pv97jYlekTC20KJrjQKmSv5DXV0R/uks2ZXhqjNkqAw==}
     dependencies:
       glob: 7.1.7
-    dev: false
 
   /@next/font/13.1.6:
     resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
@@ -1246,7 +1247,6 @@ packages:
       minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
-    dev: false
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
