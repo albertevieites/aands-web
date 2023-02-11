@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { teamData } from '@/data/team';
+import { teamData } from '../../data/team';
 
 export default function TeamCard() {
 	return (

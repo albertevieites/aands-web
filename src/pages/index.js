@@ -2,13 +2,13 @@
 import Head from 'next/head';
 
 // Components
-import Hero from '@/components/sections/Hero';
-import Partners from '@/components/sections/Partners';
-import Features from '@/components/sections/Features';
-import Social from '@/components/sections/Social';
-import Story from '@/components/sections/Story';
-import Team from '@/components/sections/Team';
-import Last from '@/components/sections/Last';
+import Hero from '../components/sections/Hero';
+import Partners from '../components/sections/Partners';
+import Features from '../components/sections/Features';
+import Social from '../components/sections/Social';
+import Story from '../components/sections/Story';
+import Team from '../components/sections/Team';
+import Last from '../components/sections/Last';
 
 export default function Home() {
 	return (

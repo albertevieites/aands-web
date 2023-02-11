@@ -1,4 +1,4 @@
-import SocialCard from "@/components/cards/socialCard";
+import SocialCard from "../cards/socialCard";
 
 export default function Social() {
   return (

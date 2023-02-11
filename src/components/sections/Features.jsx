@@ -1,6 +1,6 @@
 // Components
-import FeatureLargeCard from "@/components/cards/featureLargeCard";
-import FeatureSmallCard from "@/components/cards/featureSmallCard";
+import FeatureLargeCard from "../cards/featureLargeCard";
+import FeatureSmallCard from "../cards/featureSmallCard";
 
 // Large Card Imports
 import advertisimImage from "/public/images/products/advertisim/advertisim_3.png";

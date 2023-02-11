@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { socialData } from '@/data/social';
+import { socialData } from '../../data/social';
 
 export default function SocialCard() {
 	return (
