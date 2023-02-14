@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function ProductDetails(props) {
 	const { product, longDescription, img, icn } = props.details;
 	const [selectedImg, setSelectedImg] = useState(img[0]);
-	console.log(product);
+	console.log(props.details);
 
 	const handleClick = newImg => {
 		setSelectedImg(newImg);

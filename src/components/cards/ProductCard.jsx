@@ -30,7 +30,7 @@ export default function ProductCard() {
 						<p>{product.description}</p>
 
 						<div className="product--card__button">
-							<ButtonDetails link={`/products/${product.id}`}  />
+							<ButtonDetails link={`/products/${product.code}`}  />
 						</div>
 					</div>
 				)})}
