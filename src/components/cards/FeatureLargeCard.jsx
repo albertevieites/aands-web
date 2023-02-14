@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function FeatureLargeCard(props) {
   const { img1, img2, img3, legend, text } = props;
+  console.log(img1);
   return (
     <div className='card--large'>
       <div className="card--large__text">

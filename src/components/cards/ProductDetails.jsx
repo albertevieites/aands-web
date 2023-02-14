@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function ProductDetails(details) {
-	const { product, longDescription, img, icn } = details;
+export default function ProductDetails(props) {
+	const { product, longDescription, img, icn } = props.details;
 	const [selectedImg, setSelectedImg] = useState(img[0]);
-	console.log(details);
+	console.log(product);
 
 	const handleClick = newImg => {
 		setSelectedImg(newImg);

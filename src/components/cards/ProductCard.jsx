@@ -6,6 +6,8 @@ import { productData } from '../../data/products';
 
 export default function ProductCard() {
 
+	console.log(productData);
+
 	return (
 		<>
 			{/* Product Card Div */}
@@ -28,7 +30,7 @@ export default function ProductCard() {
 						<p>{product.description}</p>
 
 						<div className="product--card__button">
-							<ButtonDetails link={`/products/${product.code}`}  />
+							<ButtonDetails link={`/products/${product.id}`}  />
 						</div>
 					</div>
 				)})}

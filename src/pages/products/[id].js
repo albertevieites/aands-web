@@ -8,6 +8,8 @@ export default function DetailsPage() {
 	const router = useRouter();
 	const { id } = router.query;
 
+	console.log(productData);
+
 	if (!router.isReady) {
 		return <div>Loading...</div>;
 	}
@@ -15,6 +17,8 @@ export default function DetailsPage() {
 	const details = productData.filter(detail => {
 		return detail.id === Number(id);
 	})[0];
+
+	console.log(details);
 
 	return (
 			<div className='dynamic--product'>
