@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProductDetails from 'src/components/cards/productDetails';
+import ProductDetails from 'src/components/cards/ProductDetails';
 
 import ProductCard from '../../components/cards/ProductCard';
 
