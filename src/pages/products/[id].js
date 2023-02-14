@@ -7,18 +7,15 @@ import { productData } from '../../data/products';
 export default function DetailsPage() {
 	const router = useRouter();
 	const { id } = router.query;
-
-	console.log(productData);
+	// Double check id meaning
 
 	if (!router.isReady) {
 		return <div>Loading...</div>;
 	}
 
 	const details = productData.filter(detail => {
-		return detail.id === Number(id);
+		return detail.code === id;
 	})[0];
-
-	console.log(details);
 
 	return (
 			<div className='dynamic--product'>
