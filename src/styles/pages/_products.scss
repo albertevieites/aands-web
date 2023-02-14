@@ -1,0 +1,12 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+@use '../abstracts/variables' as *;
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 2rem;
+  max-width: $max-width;
+  margin:  0 auto;
+}

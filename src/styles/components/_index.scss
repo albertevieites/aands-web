@@ -1,8 +1,3 @@
-/*
-@forward './cards/overlay';
-@forward './cards/productCard';
-@forward './cards/productDetails';
-*/
 @forward './layout/layout';
 
 @forward './navigation/footer';
@@ -11,24 +6,17 @@
 @forward './cards/featureSmallCard';
 @forward './cards/featureLargeCard';
 @forward './cards/socialCard';
-@forward './cards/teamCard'; 
+@forward './cards/teamCard';
+@forward './cards/productCard';
+@forward './cards/productDetails';
 
 @forward './tokens/buttons/callBtn';
 @forward './tokens/buttons/contactBtn';
+@forward './tokens/buttons/detailsBtn.scss';
 @forward './tokens/buttons/productsBtn';
 
-/*
-@forward './sections/features';
-@forward './sections/hero';
-@forward './sections/last';
-@forward './sections/partners';
-@forward './sections/social';
-@forward './sections/story';
-@forward './sections/team';
+@forward './utils/form';
+@forward './utils/map';
 
-@forward './tokens/buttons/detailsBtn.scss';
 @forward './tokens/line';
 @forward './tokens/separator';
-
-@forward './utils/form';
-@forward './utils/map'; */
