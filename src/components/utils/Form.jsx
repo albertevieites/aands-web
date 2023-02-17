@@ -54,10 +54,10 @@ export default function Form() {
 
       <div className="form__message">
         <label htmlFor="message">Message</label>
-        <input
+        <textarea
           type="text"
           name='message'
-          placeholder='My early ages'
+          placeholder='My early ages...'
           value={message}
           onChange={messageOnChange}
         />
