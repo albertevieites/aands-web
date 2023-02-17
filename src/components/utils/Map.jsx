@@ -5,7 +5,7 @@ import {
 
 const containerStyle = {
   width: '100%',
-  height: "30vh",
+  height: "55vh",
 };
 
 export default function Map() {
