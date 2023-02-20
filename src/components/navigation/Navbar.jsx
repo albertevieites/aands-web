@@ -1,14 +1,28 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 import brandLogo from '/public/icons/aands.svg';
 
 import ButtonContact from '../tokens/buttons/ContactBtn';
 
 export default function Navbar() {
+	const [ sticky, setSticky] = useState(false);
+
+	useEffect(()=> {
+		handleScroll()
+		window.addEventListener('scroll', handleScroll);
+		return ( ) => window.removeEventListener('scroll', handleScroll);
+	})
+
+	const handleScroll = () => {
+		setSticky(window.scrollY > 80);
+		console.log(window.scrollY);
+	}
+
 	return (
 		// NAVBAR
-		<div className='navbar'>
+		<div className={`${sticky ? "sticky" : "navbar"}`}>
 			<div className='navbar__brand'>
 				<Link href='/'>
 					<Image src={brandLogo} alt='Brand Logo' />

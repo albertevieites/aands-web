@@ -3,9 +3,6 @@
 @use '../../abstracts/variables' as *;
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-
 	max-width: $max-width;
 	margin: 0 auto;
 	padding: 6em 0 2em;
@@ -18,32 +15,25 @@
 		font-weight: $f-w-600;
 	}
 
-	&__image {
+	&__top {
 		display: flex;
+		justify-content: space-between;
+	}
+
+	&__bottom { 
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
+	}
 
-		height: fit-content;
-
+	&__image {
 		img {
 			width: 3rem;
 			height: auto;
-			margin: .5rem;
+			margin-bottom: 1rem;
 		}
 
 		h4 {
-			color: $clr-light-grey;
-		}
-	}
-
-	&__here {
-		text-align: left;
-
-		h4 {
-			padding-bottom: 1em;
-		}
-
-		p {
-			font-size: $f-s-440;
 			color: $clr-light-grey;
 		}
 	}
@@ -69,7 +59,10 @@
 	}
 
 	&__social {
+		display: flex;
+
 		span {
+			margin-right: 1rem;
 			font-size: $f-s-440;
 			color: $clr-light-grey;
 		}
