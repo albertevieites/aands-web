@@ -12,6 +12,8 @@
 
 	color: $clr-white;
 
+	transition: all .5s ease-in-out;
+
 	img {
 		height: auto;
 	}
@@ -31,9 +33,53 @@
 	&__list {
 		display: flex;
 		gap: 2em;
-    align-items: center;
+		align-items: center;
 
-    height: 100%;
-    padding-right: 2em;
+		height: 100%;
+		padding-right: 2em;
+	}
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 0;
+
+
+  backdrop-filter: blur(15rem);
+
+	color: $clr-white;
+
+	img {
+		height: auto;
+	}
+
+	a {
+		font-size: $f-s-420;
+	}
+
+	&__brand {
+		width: 5rem;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+
+		height: 100%;
+		padding-right: 2em;
 	}
 }
