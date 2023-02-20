@@ -5,7 +5,7 @@
 .footer {
 	max-width: $max-width;
 	margin: 0 auto;
-	padding: 6em 0 2em;
+	padding: 3em 0 1em;
 
 	color: $clr-white;
 	text-align: center;
@@ -51,6 +51,12 @@
 		}
 	}
 
+	&__btns {
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+	}
+
 	&__email {
 		padding-bottom: 1em;
 
@@ -90,7 +96,7 @@
 	}
 
 	&__links {
-		padding-bottom: 5em;
+		padding-bottom: 1.7rem;
 	}
 
 	&__copy {
