@@ -1,45 +1,50 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
 
-.card--small{
-  position: relative;
+.card--small {
+	position: relative;
 
 	background-color: $clr-card;
 	border: 0.01rem solid $clr-border-card;
 	border-radius: 2rem;
 
-  h3 {
-    padding-bottom: .7em;
+	h3 {
+		padding-bottom: 0.7em;
 
 		font-size: $f-s-480;
 		font-weight: $f-w-600;
-		letter-spacing: .04rem;
-  }
-
-  p {
-		font-size: $f-s-380;
-		font-weight: $f-w-200;
-		letter-spacing: .02rem;
+		letter-spacing: 0.04rem;
 	}
 
-  &__content {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-  }
+	p {
+		font-size: $f-s-380;
+		font-weight: $f-w-200;
+		letter-spacing: 0.02rem;
+	}
 
-  &__bg {
-    width: 80%;
-    margin: 0 auto;
-    height: 17rem;
-  }
+	&__content {
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
 
-  &__icon {
-    position: absolute;
-    top: 15%;
-    left: 32%;
+	&__bg {
+		width: 80%;
+		margin: 0 auto;
+		height: 17rem;
+	}
 
-    width: 8em;
-    height: auto;
-  }
+	&__icon {
+		position: absolute;
+		top: 15%;
+		left: 32%;
+
+		width: 8em;
+		height: auto;
+	}
+}
+
+.communication {
+  object-fit: contain;
+	width: 80%;
 }

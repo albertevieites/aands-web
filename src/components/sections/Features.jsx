@@ -10,7 +10,7 @@ import switchImage from "/public/images/products/switch/switch_1.png";
 // Small Card Imports
 import communicationIcon from "/public/icons/communication.svg";
 import connectivityIcon from "/public/icons/connectivity.svg";
-import transparentVector from "/public/images/assets/transparent.svg";
+import dotsVector from "/public/images/assets/spiral-dots.svg";
 import wiresVector from "/public/images/assets/wires.svg";
 
 export default function Features() {
@@ -40,8 +40,8 @@ export default function Features() {
           text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."
         />
         <FeatureSmallCard
-          className="features__container--communication"
-          imgBg={transparentVector}
+          className="communication"
+          imgBg={dotsVector}
           imgIcn={communicationIcon}
           title="Communication"
           text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."

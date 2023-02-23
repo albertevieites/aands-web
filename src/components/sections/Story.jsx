@@ -1,10 +1,44 @@
 export default function Story() {
-  return (
-    <section id='story' className='story'>
-				<h2>Our Story (so far...)</h2>
-				<p>
-					A&S Lifts is a well-established company in the elevator industry that was founded in the early 2000s. The company started small, offering simple elevator systems and escalators to local residential and commercial buildings but has since expanded to include advanced elevator systems such as destination control systems, machine room-less elevators, and internet connectivity. The company places a strong emphasis on customer satisfaction and has a team of experienced technicians and engineers available 24/7 for support and maintenance services. The company has a strong focus on safety, quality, and customer satisfaction and offers a wide range of products and services to meet the needs of any customer from small residential buildings to large commercial and industrial projects.
-				</p>
-			</section>
-  )
+	return (
+		<section id='story' className='story'>
+			<h2>Our Story (so far...)</h2>
+			<div className='story__container'>
+				<div className='story__card'>
+					<h3>2020</h3>
+					<span>
+						B&S Lifts successfully navigated the challenges by offering virtual
+						consultations and contactless installations, as well as investing in
+						research and development for innovative products.
+					</span>
+				</div>
+				<div className='story__card'>
+					<h3>2021</h3>
+					<span>
+						B&S Lifts secured long-term contracts, launched a mobile app, and
+						implemented eco-friendly practices, resulting in increased revenue and
+						market share.
+					</span>
+				</div>
+				<div className='story__card'>
+					<h3>2022</h3>
+					<span>
+						B&S Lifts doubled down on innovation with a digital platform for
+						custom designs and predictive maintenance services, while also
+						prioritizing sustainability through renewable energy investments.
+						Despite increased competition, B&S Lifts remained a leader in the lift
+						industry.
+					</span>
+				</div>
+				<div className='story__card'>
+					<h3>2023</h3>
+					<span>
+						B&S Lifts enhanced its customer experience with new technologies and
+						expanded its global services. The company also explored innovative
+						sustainable technologies such as regenerative braking and energy
+						storage, solidifying its position as a leader in the lift industry.
+					</span>
+				</div>
+			</div>
+		</section>
+	);
 }

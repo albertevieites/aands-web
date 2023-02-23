@@ -4,7 +4,7 @@
 
 // STORY SECTION
 .story {
-  max-width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 2em 2em;
 
@@ -16,5 +16,99 @@
 		margin-bottom: 1em;
 
 		text-align: center;
+	}
+
+	&__container {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	&__card {
+		display: flex;
+		gap: 3rem;
+
+		padding: 2rem;
+
+		h3 {
+			font-size: $f-s-600;
+
+			opacity: 0.8;
+			color: #ebffff;
+			text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff,
+				0 0 10px $clr-blue, 0 0 50px $clr-blue;
+			-webkit-animation: fade 3s infinite alternate;
+			-moz-animation: fade 3s infinite alternate;
+			-o-animation: fade 3s infinite alternate;
+			animation: fade 3s infinite alternate;
+		}
+
+		@-moz-keyframes fade {
+			40% {
+				opacity: 0.8;
+			}
+			42% {
+				opacity: 0.1;
+			}
+			43% {
+				opacity: 0.8;
+			}
+			45% {
+				opacity: 0.1;
+			}
+			46% {
+				opacity: 0.8;
+			}
+		}
+		@-webkit-keyframes fade {
+			40% {
+				opacity: 0.8;
+			}
+			42% {
+				opacity: 0.1;
+			}
+			43% {
+				opacity: 0.8;
+			}
+			45% {
+				opacity: 0.1;
+			}
+			46% {
+				opacity: 0.8;
+			}
+		}
+		@-o-keyframes fade {
+			40% {
+				opacity: 0.8;
+			}
+			42% {
+				opacity: 0.1;
+			}
+			43% {
+				opacity: 0.8;
+			}
+			45% {
+				opacity: 0.1;
+			}
+			46% {
+				opacity: 0.8;
+			}
+		}
+		@keyframes fade {
+			40% {
+				opacity: 0.8;
+			}
+			42% {
+				opacity: 0.1;
+			}
+			43% {
+				opacity: 0.8;
+			}
+			45% {
+				opacity: 0.1;
+			}
+			46% {
+				opacity: 0.8;
+			}
+		}
 	}
 }

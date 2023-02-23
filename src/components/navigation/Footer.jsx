@@ -70,7 +70,7 @@ export default function Footer() {
 						</Link>
 					</div>
 				</div>
-				<div className='footer__copy'>Copyright © 2022 A&S LIFTS</div>
+				<div className='footer__copy'>Copyright © 2023 A&S LIFTS</div>
 			</div>
 		</div>
 	);
