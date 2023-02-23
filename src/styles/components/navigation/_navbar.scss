@@ -2,61 +2,26 @@
 @use '../../abstracts/fonts' as *;
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2rem 0;
-
-	color: $clr-white;
-
-	transition: all .5s ease-in-out;
-
-	img {
-		height: auto;
-	}
-
-	a {
-		font-size: $f-s-420;
-	}
-
-	&__brand {
-		width: 5rem;
-	}
-
-	&__links {
-		display: flex;
-	}
-
-	&__list {
-		display: flex;
-		gap: 2em;
-		align-items: center;
-
-		height: 100%;
-		padding-right: 2em;
-	}
-}
-
-.sticky {
 	position: sticky;
 	top: 0;
 	z-index: 1;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
-	padding: 2rem 0;
+	background-color: $clr-background;
 
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-  backdrop-filter: blur(15rem);
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem 0;
+		background-color: $clr-background;
 
-	color: $clr-white;
+		color: $clr-white;
+	}
 
 	img {
 		height: auto;
@@ -83,3 +48,4 @@
 		padding-right: 2em;
 	}
 }
+

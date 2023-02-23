@@ -1,5 +1,5 @@
-export default function Separator() {
+export default function Separator({className}) {
   return (
-    <div className='separator'></div>
+    <div className={`separator ${className}`}></div>
   )
 }
