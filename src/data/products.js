@@ -1,7 +1,7 @@
 export const productData = [
 	{
 		id: 1,
-		code: "gsr",
+		code: 'gsr',
 		img: [
 			{
 				id: 101,
@@ -46,10 +46,40 @@ export const productData = [
 				text: 'Facebook',
 			},
 		],
+		featureImg: [
+			{
+				text: 'WiFi',
+				src: '/icons/features/wifi.svg',
+			},
+			{
+				text: '4G Connectivity',
+				src: '/icons/features/4g.svg',
+			},
+			{
+				text: 'Telephone SLIC',
+				src: '/icons/features/phone.svg',
+			},
+			{
+				text: 'Output 12V',
+				src: '/icons/features/plug.svg',
+			},
+			{
+				text: 'Ehternet',
+				src: '/icons/features/ethernet.svg',
+			},
+			{
+				text: 'USB Extension',
+				src: '/icons/features/usb.svg',
+			},
+			{
+				text: 'Battery',
+				src: '/icons/features/battery.svg',
+			},
+		],
 	},
 	{
 		id: 2,
-		code: "nearkey",
+		code: 'nearkey',
 		img: [
 			{
 				src: '/images/products/nearkey/nearkey_1.png',
@@ -89,7 +119,7 @@ export const productData = [
 	},
 	{
 		id: 3,
-		code: "advertisim",
+		code: 'advertisim',
 		img: [
 			{
 				src: '/images/products/advertisim/advertisim_1.png',
@@ -130,10 +160,52 @@ export const productData = [
 				text: 'Facebook',
 			},
 		],
+		featureImg: [
+			{
+				text: 'Visualization of floors',
+				src: '/icons/features/eye.svg',
+			},
+			{
+				text: 'Display special signals',
+				src: '/icons/features/bell-alert.svg',
+			},
+			{
+				text: 'Headlines',
+				src: '/icons/features/t-box.svg',
+			},
+			{
+				text: 'Floor description',
+				src: '/icons/features/arrows.svg',
+			},
+			{
+				text: 'Weather information',
+				src: '/icons/features/sun-thermometer.svg',
+			},
+			{
+				text: 'Images and videos',
+				src: '/icons/features/hd.svg',
+			},
+			{
+				text: 'Twitter',
+				src: '/icons/features/twitter.svg',
+			},
+			{
+				text: 'Multimedia news',
+				src: '/icons/features/multimedia.svg',
+			},
+			{
+				text: 'Image editor',
+				src: '/icons/features/image-edit.svg',
+			},
+			{
+				text: 'Flight information',
+				src: '/icons/features/takeoff.svg',
+			},
+		],
 	},
 	{
 		id: 4,
-		code: "gsm",
+		code: 'gsm',
 		img: [
 			{
 				src: '/images/products/gsm/gsm_1.png',
@@ -173,7 +245,7 @@ export const productData = [
 	},
 	{
 		id: 5,
-		code: "switch",
+		code: 'switch',
 		img: [
 			{
 				src: '/images/products/switch/switch_1.png',
@@ -205,7 +277,7 @@ export const productData = [
 	},
 	{
 		id: 6,
-		code: "tele-indicators",
+		code: 'tele-indicators',
 		img: [
 			{
 				src: '/images/products/tele-indicators/tele-indicators_1.png',
@@ -237,7 +309,7 @@ export const productData = [
 	},
 	{
 		id: 7,
-		code: "virtual-accessible-cop",
+		code: 'virtual-accessible-cop',
 		img: [
 			{
 				src: '/images/products/cop/cop_1.png',
@@ -247,7 +319,8 @@ export const productData = [
 		product: 'Virtual Accessible COP',
 		description:
 			"Nayar Systems' Pulse app allows users to call elevators using smartphones, rather than physical buttons. Works offline, requires BVA device installation in lift car and each floor.",
-      longDescription: "The Pulse app by Nayar Systems is a game-changer in the elevator industry, offering a modern and convenient way to call elevators. With the ability to call elevators using a smartphone, users no longer have to rely on physical buttons, saving time and enhancing the overall experience.The app works offline, ensuring reliable and seamless operation even in areas with poor internet connectivity. The app requires the installation of a BVA device in the lift car and on each floor, providing real-time information and control of the elevator.",
+		longDescription:
+			'The Pulse app by Nayar Systems is a game-changer in the elevator industry, offering a modern and convenient way to call elevators. With the ability to call elevators using a smartphone, users no longer have to rely on physical buttons, saving time and enhancing the overall experience.The app works offline, ensuring reliable and seamless operation even in areas with poor internet connectivity. The app requires the installation of a BVA device in the lift car and on each floor, providing real-time information and control of the elevator.',
 		icn: [
 			{
 				src: '/icons/google.svg',

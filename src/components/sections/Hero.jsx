@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import ButtonProducts from '../tokens/buttons/ProductsBtn';
+
+import isometric from '/public/images/assets/isometric.svg';
 
 export default function Hero() {
 	return (
@@ -14,6 +17,10 @@ export default function Hero() {
 				</p>
 			</div>
 			<ButtonProducts />
+			<Image
+				src={isometric}
+				alt= "isometric pattern"
+			/>
 		</section>
 	)
 }
