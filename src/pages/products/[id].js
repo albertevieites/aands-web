@@ -9,7 +9,6 @@ import { productData } from '../../data/products';
 export default function DetailsPage() {
 	const router = useRouter();
 	const { id } = router.query;
-	console.log(id);
 	// Double check id meaning
 
 	if (!router.isReady) {
