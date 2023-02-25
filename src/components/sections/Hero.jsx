@@ -3,9 +3,14 @@ import ButtonProducts from '../tokens/buttons/ProductsBtn';
 
 import isometric from '/public/images/assets/isometric.svg';
 
-export default function Hero() {
+export default function Hero(props) {
+	const { className, dataSpeed } = props;
+
 	return (
-		<section className='hero'>
+		<section
+			className={`hero ${className}`}
+			data-speed={dataSpeed}
+		>
 			<div className='hero__message'>
 				<h1>Leading solutions for<br></br>
 					the <span>lift</span> industry
@@ -17,10 +22,13 @@ export default function Hero() {
 				</p>
 			</div>
 			<ButtonProducts />
-			<Image
-				src={isometric}
-				alt= "isometric pattern"
-			/>
+					<Image
+						src={isometric}
+						alt= "isometric pattern"
+					/>
+				{/* <div className='test'>
+					<div className='ball'> 🐶 </div>
+				</div> */}
 		</section>
 	)
 }

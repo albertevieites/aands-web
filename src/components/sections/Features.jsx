@@ -13,9 +13,14 @@ import connectivityIcon from "/public/icons/connectivity.svg";
 import dotsVector from "/public/images/assets/spiral-dots.svg";
 import wiresVector from "/public/images/assets/wires.svg";
 
-export default function Features() {
+export default function Features(props) {
+  const { className, dataSpeed } = props;
+
   return (
-    <section className='features'>
+    <section 
+    className={`features ${className}`}
+    data-speed={dataSpeed}
+    >
       <div className="features__blur"></div>
 
       <div className="features__header">
