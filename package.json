@@ -13,7 +13,6 @@
     "@next/font": "^13.2.3",
     "@react-google-maps/api": "^2.18.1",
     "eslint-config-next": "^13.2.3",
-    "gsap": "npm:@gsap/shockingly@^3.11.4",
     "next": "^13.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
