@@ -1,5 +1,8 @@
-export default function Separator({className}) {
+export default function Separator({className, dataSpeed}) {
   return (
-    <div className={`separator ${className}`}></div>
+    <div
+      className={`separator ${className}`}
+      data-speed={dataSpeed}
+    ></div>
   )
 }

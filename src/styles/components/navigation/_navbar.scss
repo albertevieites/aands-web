@@ -1,14 +1,18 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
+@use "../../abstracts/mixins" as *;
 
 .navbar {
-	position: sticky;
+	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 1;
 
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
 	background-color: $clr-background;
+
+
 
 	&__top {
 		display: flex;

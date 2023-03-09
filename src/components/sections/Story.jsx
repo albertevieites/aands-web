@@ -1,6 +1,10 @@
-export default function Story() {
+export default function Story({className, dataSpeed}) {
 	return (
-		<section id='story' className='story'>
+		<section
+			id='story'
+			className={`story ${className}`}
+			data-speed={dataSpeed}
+		>
 			<h2>Our Story (so far...)</h2>
 			<div className='story__container'>
 				<div className='story__card'>

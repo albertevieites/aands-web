@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ProductDetails from 'src/components/cards/ProductDetails';
-import Line from 'src/components/tokens/Line';
 import Separator from 'src/components/tokens/Separator';
 
 import ProductCard from '../../components/cards/ProductCard';
@@ -26,7 +25,6 @@ export default function Products() {
 					)}
 				</>
 			</div>
-			<Line />
 		</>
 	);
 }

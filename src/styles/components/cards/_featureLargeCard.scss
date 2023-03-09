@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
+@use '../../abstracts/mixins' as *;
 
 .card--large {
   grid-column: span 2;
@@ -39,5 +40,10 @@
 	&__products {
 		display: flex;
 		justify-content: space-between;
+
+		@include large {
+			gap: 3rem;
+			justify-content: center;
+		}
 	}
 }

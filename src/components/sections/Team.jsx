@@ -1,8 +1,6 @@
 import TeamCard from "../cards/TeamCard";
 
-export default function Team(props) {
-  const { className, dataSpeed } = props;
-
+export default function Team({className, dataSpeed}) {
   return (
     <section
       className={`team ${className}`}

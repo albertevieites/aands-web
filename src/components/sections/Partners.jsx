@@ -3,9 +3,12 @@ import Image from 'next/image';
 
 import nayarLogo from '/public/icons/nayar.svg';
 
-export default function Partners() {
+export default function Partners({className, dataSpeed}) {
   return (
-    <section className='partners'>
+    <section
+      className={`partners ${className}`}
+      data-speed={dataSpeed}
+    >
       <div className='partners__container'>
         <Link
           className='partners__link'

@@ -12,8 +12,7 @@ export default function Navbar() {
 	const pathname = router.pathname;
 
 	return (
-		// NAVBAR
-		<div className='navbar'>
+		<nav className='navbar'>
 			<div className="navbar__top">
 				<div className='navbar__brand'>
 					<Link href='/'>
@@ -27,10 +26,7 @@ export default function Navbar() {
 								<a href='#story'>Our Story</a>
 							</li>
 							<li style={pathname === "/" ? { display: "block" } : { display: "none" }}>
-								<a href='#services'>Our Services</a>
-							</li>
-							<li style={pathname === "/" ? { display: "block" } : { display: "none" }}>
-								<a href='#ftex'>Our Events</a>
+								<a href='#ftex'>Events</a>
 							</li>
 						</ul>
 					</nav>
@@ -38,6 +34,6 @@ export default function Navbar() {
 				</div>
 			</div>
 			<Separator />
-		</div>
+		</nav>
 	);
 }

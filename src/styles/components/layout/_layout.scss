@@ -5,6 +5,8 @@ body {
 	background-color: $clr-background;
 
 	font-family: 'Inter', sans-serif;
+
+	overscroll-behavior: none;
 }
 
 h1 {
@@ -19,4 +21,9 @@ h2 {
 
 	font-size: 3rem;
 	font-weight: $f-w-600;
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
 }

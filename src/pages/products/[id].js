@@ -1,7 +1,5 @@
 // import Image from "next/image";
 import { useRouter } from 'next/router';
-import Line from 'src/components/tokens/Line';
-import Separator from 'src/components/tokens/Separator';
 import ProductDetails from '../../components/cards/ProductDetails';
 
 import { productData } from '../../data/products';
@@ -21,11 +19,9 @@ export default function DetailsPage() {
 
 	return (
 		<>
-			<Separator />
-			<div className='dynamic--product'>
+			<div className='product--dynamic'>
 				<ProductDetails details={details} />
 			</div>
-			<Line />
 		</>
 	);
 }
