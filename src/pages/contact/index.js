@@ -7,7 +7,6 @@ import Form from '../../components/utils/Form';
 import Map from '../../components/utils/Map';
 
 // Images
-import Line from 'src/components/tokens/Line';
 import Separator from 'src/components/tokens/Separator';
 import CallIcon from '/public/icons/call.svg';
 import EmailIcon from '/public/icons/email.svg';
@@ -52,7 +51,6 @@ export default function Products() {
 					</div>
 				</div>
 			</div>
-			<Line />
 		</>
 	);
 }

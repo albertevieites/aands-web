@@ -13,16 +13,12 @@ import connectivityIcon from "/public/icons/connectivity.svg";
 import dotsVector from "/public/images/assets/spiral-dots.svg";
 import wiresVector from "/public/images/assets/wires.svg";
 
-export default function Features(props) {
-  const { className, dataSpeed } = props;
-
+export default function Features({className, dataSpeed}) {
   return (
-    <section 
+    <section
     className={`features ${className}`}
     data-speed={dataSpeed}
     >
-      <div className="features__blur"></div>
-
       <div className="features__header">
         <h2>Features that deliver benefits</h2>
         <p>Our technology lift offers increased efficiency and safety, with user-friendly features and 24/7 customer support.</p>

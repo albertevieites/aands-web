@@ -1,8 +1,11 @@
 import ButtonProducts from "../tokens/buttons/ProductsBtn";
 
-export default function Last() {
+export default function Last({className, dataSpeed}) {
 	return (
-		<section className='last'>
+		<section
+		 className={`last ${className}`}
+		 data-speed={dataSpeed}
+		>
 			<div className='last__container'>
 				<div className="last__text">
 					<h2>Bulletproof your lift</h2>

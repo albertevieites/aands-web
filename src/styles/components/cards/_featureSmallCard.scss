@@ -17,34 +17,31 @@
 	}
 
 	p {
+		position: inherit;
+
+		bottom: 2rem;
+
 		font-size: $f-s-380;
 		font-weight: $f-w-200;
 		letter-spacing: 0.02rem;
 	}
 
+	border-color: red;
+
+	& > * {
+		position: absolute;
+	}
+
 	&__content {
-		width: 80%;
-		margin: 0 auto;
+		width: 90%;
+		height: 100%;
+		margin: 0 1rem;
 		padding-bottom: 2em;
 	}
 
-	&__bg {
-		width: 80%;
-		margin: 0 auto;
-		height: 17rem;
-	}
-
 	&__icon {
-		position: absolute;
-		top: 15%;
-		left: 32%;
-
 		width: 8em;
 		height: auto;
 	}
 }
 
-.communication {
-  object-fit: contain;
-	width: 80%;
-}
