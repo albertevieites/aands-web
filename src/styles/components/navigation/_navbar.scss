@@ -37,10 +37,18 @@
 
 	&__brand {
 		width: 5rem;
+
+		@include twelve__hundred {
+			margin-left: 5rem;
+		}
 	}
 
 	&__links {
 		display: flex;
+
+		@include twelve__hundred {
+			margin-right: 5rem;
+		}
 	}
 
 	&__list {

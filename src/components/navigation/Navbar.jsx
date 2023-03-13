@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import brandLogo from '/public/icons/aands.svg';
 
 import ButtonContact from '../tokens/buttons/ContactBtn';
 import Separator from '../tokens/Separator';
-import { useRouter } from 'next/router';
 
 export default function Navbar() {
 	const router = useRouter();
@@ -19,6 +19,7 @@ export default function Navbar() {
 						<Image src={brandLogo} alt='Brand Logo' />
 					</Link>
 				</div>
+
 				<div className="navbar__links">
 					<nav className='navbar__nav'>
 						<ul className='navbar__list'>

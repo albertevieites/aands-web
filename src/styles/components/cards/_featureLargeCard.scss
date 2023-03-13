@@ -33,17 +33,32 @@
 		border-radius: 2rem;
 	}
 
+	@include nine__hundred {
+		grid-column: span 3;
+	}
+
 	&__text {
 		margin: 1em 0 2em 0;
 	}
 
 	&__products {
 		display: flex;
-		justify-content: space-between;
+		gap: 1rem;
+		justify-content: center;
 
-		@include large {
+		width: 100%;
+
+		@include twelve__hundred {
 			gap: 3rem;
 			justify-content: center;
+		}
+
+		@include desktop {
+			gap: 1rem;
+		}
+
+		@include tablet {
+			width: 100%;
 		}
 	}
 }

@@ -42,6 +42,7 @@ export default function FeatureLargeCard(props) {
         <h3>{legend}</h3>
         <p>{text}</p>
       </div>
+
       <div className="card--large__products">
         <Image
           className="card--large__image1"
