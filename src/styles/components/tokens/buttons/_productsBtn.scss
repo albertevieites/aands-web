@@ -1,5 +1,6 @@
 @use '../../../abstracts/colors' as *;
 @use '../../../abstracts/fonts' as *;
+@use '../../../abstracts/mixins' as *;
 
 .products__btn {
 	display: block;
@@ -12,10 +13,12 @@
 
 	transition: all 0.2s ease-in-out;
 
-	span {
-		font-size: $f-s-420;
-		font-weight: $f-w-500;
-		color: $clr-background;
+	font-size: 1rem;
+	font-weight: $f-w-500;
+	color: $clr-background;
+
+	@include seven__hundred {
+		padding: 0.6em 1.7em;
 	}
 
 	&:hover {

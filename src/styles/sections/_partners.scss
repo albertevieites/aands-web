@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 
 // PARTNERS SECTION
 .partners {
@@ -11,6 +12,10 @@
   background-color: rgba(255, 255, 255, .9);
 	backdrop-filter: blur(1rem);
 	border-radius: 0.7rem;
+
+	@include twelve__hundred {
+		margin: 0 5rem;
+	}
 
 	&__container {
 		margin: 0 auto;

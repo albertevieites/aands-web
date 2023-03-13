@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 
 // HERO SECTION
 	.hero {
@@ -10,6 +11,14 @@
 
 	h1 {
 		margin-bottom: 1.9rem;
+
+		@include nine__hundred {
+			font-size: $f-s-1700;
+		}
+
+		@include seven__hundred {
+			font-size: $f-s-1300;
+		}
 	}
 
 	p {
@@ -19,6 +28,10 @@
 		font-weight: $f-w-300;
 		line-height: 1.3em;
 		color: $clr-light-grey;
+
+		@include seven__hundred {
+			font-size: $f-s-440;
+		}
 
 		span {
 			font-weight: $f-w-600;
@@ -40,25 +53,3 @@
 		text-align: center;
 	}
 }
-
-/* .ball {
-	position: absolute;
-	top: 0;
-
-	width: fit-content;
-	padding: 1rem;
-	border-radius: 50%;
-	background-color: $clr-blue;
-
-	offset-path: path(
-		'M.5.5h1200v1000H.5zM.5 909.59h1200M.5 818.68h1200M.5 727.77h1200M.5 636.86h1200M.5 545.95h1200M.5 455.05h1200M.5 364.14h1200M.5 273.23h1200M.5 182.32h1200M.5 91.41h1200M1143.36.5v1000M1086.21.5v1000M1029.07.5v1000M971.93.5v1000M914.79.5v1000M857.64.5v1000M800.5.5v1000M743.36.5v1000M686.21.5v1000M629.07.5v1000M571.93.5v1000M514.79.5v1000M457.64.5v1000M400.5.5v1000M343.36.5v1000M286.21.5v1000M229.07.5v1000M171.93.5v1000M114.79.5v1000M57.64.5v1000'
-	);
-
-	animation: followpath 8s linear infinite;
-}
-
-@keyframes followpath {
-	to {
-		offset-distance: 10%;
-	}
-} */

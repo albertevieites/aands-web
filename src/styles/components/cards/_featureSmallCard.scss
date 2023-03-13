@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
+@use '../../abstracts/mixins' as *;
 
 .card--small {
 	position: relative;
@@ -8,8 +9,16 @@
 	border: 0.01rem solid $clr-border-card;
 	border-radius: 2rem;
 
+	@include twelve__hundred {
+		padding-bottom: 20rem;
+	}
+
+	@include nine__hundred {
+		display: none;
+	}
+
 	h3 {
-		padding-bottom: 0.7em;
+		margin-bottom: 1rem;
 
 		font-size: $f-s-480;
 		font-weight: $f-w-600;
@@ -17,31 +26,43 @@
 	}
 
 	p {
-		position: inherit;
-
-		bottom: 2rem;
-
 		font-size: $f-s-380;
 		font-weight: $f-w-200;
 		letter-spacing: 0.02rem;
 	}
-
-	border-color: red;
 
 	& > * {
 		position: absolute;
 	}
 
 	&__content {
-		width: 90%;
-		height: 100%;
-		margin: 0 1rem;
-		padding-bottom: 2em;
+		position: inherit;
+		top: 18rem;
+
+		margin: 0 2rem;
 	}
 
 	&__icon {
+		left: 33%;
+
 		width: 8em;
 		height: auto;
+
+		@include twelve__hundred {
+			left: 29%;
+
+			width: 45%;
+		}
+	}
+
+	&__bg {
+		top: 5rem;
+		left: 13%;
+
+		@include twelve__hundred {
+			left: 0%;
+			width: 100%;
+			padding: 0 2rem;
+		}
 	}
 }
-
