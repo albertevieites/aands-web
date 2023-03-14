@@ -2,6 +2,9 @@
 @use '../../../abstracts/fonts' as *;
 
 .contact__btn {
+	display: block;
+
+	width: fit-content;
 	padding: 0.7em 2.3em;
 	background-color: $clr-white;
 	border-radius: 0.2rem;
@@ -9,11 +12,8 @@
 
 	transition: all 0.2s ease-in-out;
 
-	span {
-		font-size: $f-s-420;
-		font-weight: $f-w-500;
-		color: $clr-background;
-	}
+	font-weight: $f-w-500;
+	color: $clr-background;
 
 	&:hover {
 		background-color: $clr-white;
