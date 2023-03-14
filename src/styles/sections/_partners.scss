@@ -25,6 +25,14 @@
 			width: 15rem;
 			height: auto;
 			margin-bottom: 0.2em;
+
+			@include nine__hundred {
+				width: 13rem;
+			}
+
+			@include seven__hundred {
+				width: 10rem;
+			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
-@use "../../abstracts/mixins" as *;
+@use '../../abstracts/mixins' as *;
 
 .navbar {
 	position: fixed;
@@ -11,8 +11,6 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: $clr-background;
-
-
 
 	&__top {
 		display: flex;
@@ -60,4 +58,3 @@
 		padding-right: 2em;
 	}
 }
-
