@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 
 // LAST CALL TO ACTION SECTION
 .last {
@@ -9,20 +10,33 @@
 
 	color: $clr-white;
 
+	@include twelve__hundred {
+		margin: 0 5rem;
+	}
+
 	h2 {
 		text-align: center;
 		line-height: .3em;
+
+		@include seven__hundred {
+			width: 100%;
+			line-height: 1.7rem;
+		}
 	}
 
 	p {
-		width: 50rem;
-		margin: 0 auto;
+		margin: 0 7rem;
 
 		font-size: $f-s-480;
 		font-weight: $f-w-300;
 		text-align: center;
 		line-height: 1.167em;
 		letter-spacing: 0.04rem;
+
+		@include seven__hundred { 
+			width: 100%;
+			margin: 0;
+		}
 	}
 
 	&__container {

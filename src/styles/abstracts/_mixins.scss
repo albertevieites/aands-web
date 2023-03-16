@@ -1,5 +1,6 @@
 $breackpoints: (
 	'phone': 430px,
+	'five__hundred': 560px,
 	'seven__hundred': 770px,
 	'nine__hundred': 927px,
 	'thousand': 1000px,
@@ -8,6 +9,11 @@ $breackpoints: (
 
 @mixin phone {
 	@media screen and (max-width: map-get($breackpoints, 'phone')) {
+		@content;
+	}
+}
+@mixin five__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'five__hundred')) {
 		@content;
 	}
 }

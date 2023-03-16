@@ -29,6 +29,11 @@ export default function Navbar() {
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
+	const handleClose = () => {
+		console.log('Closing burger menu')
+		setShowBurger(false);
+	}
+
 	return (
 		<nav className='navbar'>
 				<div className="navbar__top">
@@ -46,7 +51,7 @@ export default function Navbar() {
 										<a href='#story'>Our Story</a>
 									</li>
 									<li style={pathname === "/" ? { display: "block" } : { display: "none" }}>
-										<a href='#ftex'>Events</a>
+										<a href='#events'>Events</a>
 									</li>
 								</ul>
 							</nav>
@@ -54,7 +59,7 @@ export default function Navbar() {
 						</div>
 					}
 
-					{showBurger && <Burger />}
+					{showBurger && <Burger handleClose={handleClose} />}
 				</div>
 			<Separator />
 		</nav>

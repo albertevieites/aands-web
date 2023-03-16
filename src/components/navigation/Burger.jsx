@@ -9,22 +9,33 @@ import { MenuToggle } from './MenuToggle';
 export default function Burger() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const toggle = () => setIsOpen(!isOpen);
+
+  // Function to close the menu clicking on the buttons
+  const handleClose = () => {
+    setIsOpen(false);
+  }
+
   return (
     <div className='burger'>
-      <MenuToggle isOpen={isOpen} toggle={() => setIsOpen(!isOpen)} />
+      <MenuToggle isOpen={isOpen} toggle={toggle} />
       {isOpen &&
         <div className='burger__wrapper'>
           <ul className='burger__list'>
             <li>
-              <Link href='#story'>Our Story</Link>
+              <Link
+                onClick={handleClose}
+                href='#story'>Our Story</Link>
             </li>
             <li>
-              <Link href='#ftex'>Events</Link>
+              <Link
+                onClick={handleClose}
+                href='#ftex'>Events</Link>
             </li>
           </ul>
           <div className="burger__btns">
-            <ProductsBtn />
-            <ButtonContact />
+            <ProductsBtn handleClose={handleClose} />
+            <ButtonContact handleClose={handleClose} />
           </div>
         </div>
       }

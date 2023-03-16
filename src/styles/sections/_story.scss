@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
 
 // STORY SECTION
@@ -16,6 +17,10 @@
 		margin-bottom: 1em;
 
 		text-align: center;
+
+		@include seven__hundred {
+			width: 100%;
+		}
 	}
 
 	&__container {
