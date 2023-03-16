@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
 
 // SOCIAL SECTION
@@ -9,6 +10,10 @@
 	padding: 5em 0;
 
 	color: $clr-white;
+
+	@include twelve__hundred {
+		margin: 0 5rem;
+	}
 
 	div:first-child {
 		align-self: center;
@@ -33,5 +38,10 @@
 		gap: 1.5em;
 
     max-width: 1200px;
+
+		@include nine__hundred {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }

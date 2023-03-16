@@ -1,8 +1,12 @@
 import Link from "next/link";
 
-export default function ProductsBtn() {
+export default function ProductsBtn({ handleClose }) {
   return (
-    <Link className='products__btn' href='/products'>
+    <Link
+      className='products__btn'
+      href='/products'
+      onClick={handleClose}
+    >
       Our Products
     </Link>
   )

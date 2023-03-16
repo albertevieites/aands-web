@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
+@use '../../abstracts/mixins' as *;
 @use '../../abstracts/variables' as *;
 
 .footer {
@@ -19,17 +20,26 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding-top: 4rem;
+
+		@include twelve__hundred {
+			margin: 0 5em;
+		}
 	}
 
 	&__top {
 		display: flex;
 		justify-content: space-between;
-	}
 
-	&__bottom { 
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include seven__hundred {
+			display: grid;
+			gap: 2rem;
+			grid-template-columns: repeat(2, 1fr);
+			margin-inline: auto;
+		}
+
+		@include five__hundred {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__image {
@@ -41,7 +51,15 @@
 
 		h4 {
 			color: $clr-light-grey;
+			width: fit-content;
 		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__talk {
@@ -73,6 +91,10 @@
 	&__social {
 		display: flex;
 
+		@include five__hundred {
+			padding-bottom: 1rem;
+		}
+		
 		span {
 			margin-right: 1rem;
 			font-size: $f-s-440;
