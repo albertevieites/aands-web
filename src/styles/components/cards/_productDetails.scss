@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/fonts' as *;
+@use '../../abstracts/mixins' as *;
 
 .product--details {
 	display: flex;
@@ -17,14 +18,31 @@
 		height: fit-content;
 	}
 
-	&__carrousel {
-		position: relative;
+	@include thousand {
+		flex-direction: column;
+	}
 
-		width: 16%;
-		height: fit-content;
+	&__images {
+		display: grid;
+		grid-template-columns: 25% 75%;
+		width: 100%;
+
+		@include eleven__hundred {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__carrousel {
+		height: auto;
 		margin: 1.5rem;
 
 		border-radius: 1rem;
+
+		@include eleven__hundred {
+			order: 1;
+
+			display: flex;
+		}
 
 		img {
 			margin-bottom: 0.7rem;
@@ -43,7 +61,7 @@
 	}
 
 	&__image {
-		width: 40%;
+		width: 100%;
 	}
 
 	&__content {
@@ -51,6 +69,17 @@
 		padding: 2em;
 
 		color: $clr-background;
+
+		@include thousand {
+			display: flex;
+			gap: 4rem;
+
+			width: 100%;
+		}
+
+		@include seven__hundred {
+			flex-direction: column;
+		}
 
 		h3 {
 			margin-bottom: 1rem;
@@ -61,6 +90,14 @@
 
 		&--text {
 			margin-bottom: 2rem;
+
+			@include thousand {
+				width: 50%;
+			}
+
+			@include seven__hundred {
+				width: 100%;
+			}
 		}
 
 		&--icon {
@@ -74,6 +111,14 @@
 		&--features {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
+
+			@include eleven__hundred {
+				grid-template-columns: 1fr;
+			}
+
+			@include thousand {
+				grid-template-columns: repeat(2, 1fr);
+			}
 		}
 	}
 }

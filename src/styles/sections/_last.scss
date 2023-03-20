@@ -4,15 +4,7 @@
 
 // LAST CALL TO ACTION SECTION
 .last {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 5em 0;
-
-	color: $clr-white;
-
-	@include twelve__hundred {
-		margin: 0 5rem;
-	}
+	margin: 2rem;
 
 	h2 {
 		text-align: center;
@@ -33,18 +25,21 @@
 		line-height: 1.167em;
 		letter-spacing: 0.04rem;
 
-		@include seven__hundred { 
+		@include seven__hundred {
 			width: 100%;
 			margin: 0;
 		}
 	}
 
 	&__container {
+		max-width: 1200px;
 		margin: 0 auto;
 		padding: 3em;
 		background-color: $clr-card;
 		border: 0.01rem solid $clr-border-card;
 		border-radius: 0.7rem;
+
+		color: $clr-white;
 	}
 
 	&__text {

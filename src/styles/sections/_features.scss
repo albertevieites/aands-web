@@ -4,34 +4,15 @@
 
 // FEATURE SECTION
 .features {
-  max-width: 1200px;
-	margin: 0 auto;
-	padding: 5em 0;
+	margin: 0 2rem;
 
-	color: $clr-white;
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 5em 0;
 
-	@include twelve__hundred {
-		margin: 0 5rem;
+		color: $clr-white;
 	}
-
-/* 	h2 {
-		margin-bottom: .7em;
-
-		font-size: 3rem;
-		font-weight: $f-w-600;
-
-		@include nine__hundred {
-			font-size: 2.7rem;
-		}
-
-		@include seven__hundred {
-			width: 20rem;
-			margin-bottom: 1rem;
-
-			font-size: 2.3rem;
-			line-height: 2.7rem;
-		}
-	} */
 
 	&__header {
 		margin-bottom: 10rem;
@@ -56,7 +37,7 @@
 		}
 	}
 
-	&__container {
+	&__content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1.5em;

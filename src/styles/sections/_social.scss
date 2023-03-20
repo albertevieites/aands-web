@@ -5,15 +5,7 @@
 
 // SOCIAL SECTION
 .social {
-  max-width: $max-width;
-	margin: 0 auto;
-	padding: 5em 0;
-
-	color: $clr-white;
-
-	@include twelve__hundred {
-		margin: 0 5rem;
-	}
+	margin: 0 2rem;
 
 	div:first-child {
 		align-self: center;
@@ -30,6 +22,14 @@
 	p {
 		white-space: pre-line;
 		vertical-align: bottom;
+	}
+
+	&__container {
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 5em 0;
+
+		color: $clr-white;
 	}
 
 	&__grid {

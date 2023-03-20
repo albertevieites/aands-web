@@ -11,29 +11,32 @@ export default function ProductDetails(props) {
 
 	return (
 			<div className='product--details'>
-				<div className='product--details__carrousel'>
-					{img.map(image => {
-						return (
-							<Image
-								key={image.id}
-								src={image.src}
-								alt={image.alt}
-								width={1000}
-								height={1000}
-								className={selectedImg.id === image.id ? "active" : ''}
-								onClick={() => handleClick(image)}
-							/>
-						);
-					})}
-				</div>
-
-				<div className='product--details__image'>
-					<Image
-						src={selectedImg.src}
-						alt={selectedImg.alt}
-						width={1000}
-						height={1000}
-					/>
+				<div className="product--details__images">
+					<div className='product--details__carrousel'>
+						{img.map(image => {
+							return (
+								<div className="product--details__carrousel--item" key={image.id}>
+									<Image
+										key={image.id}
+										src={image.src}
+										alt={image.alt}
+										width={1000}
+										height={1000}
+										className={selectedImg.id === image.id ? "active" : ''}
+										onClick={() => handleClick(image)}
+									/>
+								</div>
+							);
+						})}
+					</div>
+					<div className='product--details__image'>
+						<Image
+							src={selectedImg.src}
+							alt={selectedImg.alt}
+							width={1000}
+							height={1000}
+						/>
+					</div>
 				</div>
 
 				<div className='product--details__content'>

@@ -6,8 +6,10 @@ export default function Team({className, dataSpeed}) {
       className={`team ${className}`}
       data-speed={dataSpeed}
       >
-				<h2>Meet the Team</h2>
-				<TeamCard />
+				<div className="team__container">
+          <h2>Meet the Team</h2>
+          <TeamCard />
+        </div>
 			</section>
   )
 }
