@@ -4,9 +4,7 @@
 @use '../../abstracts/variables' as *;
 
 .footer {
-	width: 100%;
-	margin: 0 auto;
-	padding: 3em 0 1em;
+	padding: 1rem 2rem;
 
 	color: $clr-white;
 	text-align: center;
@@ -19,11 +17,7 @@
 	&__container {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding-top: 4rem;
-
-		@include twelve__hundred {
-			margin: 0 5em;
-		}
+		padding-top: 3rem;
 	}
 
 	&__top {
@@ -94,7 +88,7 @@
 		@include five__hundred {
 			padding-bottom: 1rem;
 		}
-		
+
 		span {
 			margin-right: 1rem;
 			font-size: $f-s-440;

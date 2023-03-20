@@ -19,42 +19,43 @@ export default function Features({className, dataSpeed}) {
     className={`features ${className}`}
     data-speed={dataSpeed}
     >
-      <div className="features__header">
-        <h2>Features that deliver benefits</h2>
-        <p>Our technology lift offers increased efficiency and safety, with user-friendly features and 24/7 customer support.</p>
-      </div>
-
       <div className="features__container">
-        <FeatureLargeCard
-          className="features__container--grid-col-span-2"
-          img1={gsmImage}
-          img2={switchImage}
-          img3={advertisimImage}
-          legend="Increased Efficiency"
-          text="Technological lift products are designed with advanced safety features such as load sensors, emergency stop buttons, and automatic shut-off systems."
-        />
-        <FeatureSmallCard
-          className="features__container--connectivity"
-          imgBg={wiresVector}
-          imgIcn={connectivityIcon}
-          title="Connectivity"
-          text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."
-        />
-        <FeatureSmallCard
-          className="communication"
-          imgBg={dotsVector}
-          imgIcn={communicationIcon}
-          title="Communication"
-          text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."
-        />
-        <FeatureLargeCard
-          className="features__container--grid-col-span-2"
-          img1={gsmImage}
-          img2={switchImage}
-          img3={advertisimImage}
-          legend="Easy Maintenance"
-          text="Many technological lift products are designed with easy-to-access components and built-in diagnostics, making maintenance and repairs."
-        />
+        <div className="features__header">
+          <h2>Features that deliver benefits</h2>
+          <p>Our technology lift offers increased efficiency and safety, with user-friendly features and 24/7 customer support.</p>
+        </div>
+        <div className="features__content">
+          <FeatureLargeCard
+            className="features__container--grid-col-span-2"
+            img1={gsmImage}
+            img2={switchImage}
+            img3={advertisimImage}
+            legend="Increased Efficiency"
+            text="Technological lift products are designed with advanced safety features such as load sensors, emergency stop buttons, and automatic shut-off systems."
+          />
+          <FeatureSmallCard
+            className="features__container--connectivity"
+            imgBg={wiresVector}
+            imgIcn={connectivityIcon}
+            title="Connectivity"
+            text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."
+          />
+          <FeatureSmallCard
+            className="communication"
+            imgBg={dotsVector}
+            imgIcn={communicationIcon}
+            title="Communication"
+            text="Our products offer connectivity solutions such as real-time data transmission, wireless access, and remote control."
+          />
+          <FeatureLargeCard
+            className="features__container--grid-col-span-2"
+            img1={gsmImage}
+            img2={switchImage}
+            img3={advertisimImage}
+            legend="Easy Maintenance"
+            text="Many technological lift products are designed with easy-to-access components and built-in diagnostics, making maintenance and repairs."
+          />
+        </div>
       </div>
     </section>
   )

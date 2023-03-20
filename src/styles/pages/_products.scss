@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
+@use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
 
 .products {
@@ -11,4 +12,12 @@
   padding: 2rem;
   margin:  0 auto;
   margin-top: 7rem;
+
+  @include eleven__hundred {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include seven__hundred {
+    grid-template-columns: 1fr;
+  }
 }

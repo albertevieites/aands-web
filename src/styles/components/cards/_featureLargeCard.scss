@@ -53,12 +53,8 @@
 			justify-content: center;
 		}
 
-		@include desktop {
+		@include thousand{
 			gap: 1rem;
-		}
-
-		@include tablet {
-			width: 100%;
 		}
 	}
 }

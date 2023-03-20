@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 // Components
 import CallBtn from '../tokens/buttons/CallBtn';
-import Line from '../tokens/Line';
 
 // Images
 import brandIcon from '/public/icons/aands.svg';
@@ -15,7 +14,6 @@ import linkedinIcon from '/public/icons/linkedin.svg';
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			<Line />
 			<div className="footer__container">
 				<div className="footer__top">
 					<div className='footer__image'>
