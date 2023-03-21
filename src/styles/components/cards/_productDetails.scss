@@ -86,6 +86,10 @@
 
 			font-size: $f-s-700;
 			font-weight: $f-w-600;
+
+			@include four__hundred {
+				line-height: 2rem;
+			}
 		}
 
 		&--text {
@@ -97,6 +101,8 @@
 
 			@include seven__hundred {
 				width: 100%;
+
+				margin:  0;
 			}
 		}
 
@@ -118,6 +124,10 @@
 
 			@include thousand {
 				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include four__hundred {
+				grid-template-columns: 1fr;
 			}
 		}
 	}

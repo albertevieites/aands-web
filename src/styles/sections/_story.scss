@@ -5,17 +5,12 @@
 
 // STORY SECTION
 .story {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2em 2em;
-
-	color: $clr-white;
-
-	background-image: url(../../../public/images/assets/story-pattern.svg);
+	margin: 0 2rem;
 
 	h2 {
-		margin-bottom: 1em;
+		padding-bottom: 3rem;
 
+		color: $clr-white;
 		text-align: center;
 
 		@include seven__hundred {
@@ -23,96 +18,46 @@
 		}
 	}
 
+	p {
+		padding-bottom: 2rem;
+
+		color: $clr-white;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
 	&__container {
-		width: 70%;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
-	&__card {
+	&__content {
 		display: flex;
-		gap: 3rem;
+		align-content: center;
+		gap: 2rem;
 
-		padding: 2rem;
-
-		h3 {
-			font-size: $f-s-600;
-
-			opacity: 0.8;
-			color: #ebffff;
-			text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff,
-				0 0 10px $clr-blue, 0 0 50px $clr-blue;
-			-webkit-animation: fade 3s infinite alternate;
-			-moz-animation: fade 3s infinite alternate;
-			-o-animation: fade 3s infinite alternate;
-			animation: fade 3s infinite alternate;
+		@include nine__hundred {
+			flex-direction: column;
 		}
 
-		@-moz-keyframes fade {
-			40% {
-				opacity: 0.8;
-			}
-			42% {
-				opacity: 0.1;
-			}
-			43% {
-				opacity: 0.8;
-			}
-			45% {
-				opacity: 0.1;
-			}
-			46% {
-				opacity: 0.8;
+		&--image {
+			align-self: center;
+
+			width: 50%;
+
+			@include nine__hundred {
+				width: 75%;
 			}
 		}
-		@-webkit-keyframes fade {
-			40% {
-				opacity: 0.8;
-			}
-			42% {
-				opacity: 0.1;
-			}
-			43% {
-				opacity: 0.8;
-			}
-			45% {
-				opacity: 0.1;
-			}
-			46% {
-				opacity: 0.8;
-			}
-		}
-		@-o-keyframes fade {
-			40% {
-				opacity: 0.8;
-			}
-			42% {
-				opacity: 0.1;
-			}
-			43% {
-				opacity: 0.8;
-			}
-			45% {
-				opacity: 0.1;
-			}
-			46% {
-				opacity: 0.8;
-			}
-		}
-		@keyframes fade {
-			40% {
-				opacity: 0.8;
-			}
-			42% {
-				opacity: 0.1;
-			}
-			43% {
-				opacity: 0.8;
-			}
-			45% {
-				opacity: 0.1;
-			}
-			46% {
-				opacity: 0.8;
+
+		&--text {
+			width: 50%;
+
+			@include nine__hundred {
+				width: 100%;
 			}
 		}
 	}

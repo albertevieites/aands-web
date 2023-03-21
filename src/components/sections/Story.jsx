@@ -1,46 +1,31 @@
-export default function Story({className, dataSpeed}) {
+import Image from "next/image";
+
+import OfficeImg from '/public/images/assets/office.svg'
+
+export default function Story({ className, dataSpeed }) {
 	return (
 		<section
 			id='story'
 			className={`story ${className}`}
 			data-speed={dataSpeed}
 		>
-			<h2>Our Story (so far...)</h2>
-			<div className='story__container'>
-				<div className='story__card'>
-					<h3>2020</h3>
-					<span>
-						B&S Lifts successfully navigated the challenges by offering virtual
-						consultations and contactless installations, as well as investing in
-						research and development for innovative products.
-					</span>
-				</div>
-				<div className='story__card'>
-					<h3>2021</h3>
-					<span>
-						B&S Lifts secured long-term contracts, launched a mobile app, and
-						implemented eco-friendly practices, resulting in increased revenue and
-						market share.
-					</span>
-				</div>
-				<div className='story__card'>
-					<h3>2022</h3>
-					<span>
-						B&S Lifts doubled down on innovation with a digital platform for
-						custom designs and predictive maintenance services, while also
-						prioritizing sustainability through renewable energy investments.
-						Despite increased competition, B&S Lifts remained a leader in the lift
-						industry.
-					</span>
-				</div>
-				<div className='story__card'>
-					<h3>2023</h3>
-					<span>
-						B&S Lifts enhanced its customer experience with new technologies and
-						expanded its global services. The company also explored innovative
-						sustainable technologies such as regenerative braking and energy
-						storage, solidifying its position as a leader in the lift industry.
-					</span>
+			<div className="story__container">
+				<h2>Our Story (so far...)</h2>
+				<div className='story__content'>
+					<div className="story__content--image">
+						<Image
+							src={OfficeImg}
+							alt='office graphics'
+							width={500}
+						/>
+					</div>
+					<div className="story__content--text">
+						<p>A&S Lifts was founded in 1985 by two brothers, Alex and Sam, who had a passion for engineering and innovation. They started the company in a small garage in Maidenhead, where they would spend long hours tinkering with elevator parts and brainstorming new designs.</p>
+
+						<p>At first, the company struggled to gain traction, but as word spread about their high-quality elevators and excellent customer service, they began to attract more clients. One of their biggest early contracts was with a large hotel chain that wanted to replace all the outdated elevators in their properties with modern, efficient ones.</p>
+
+						<p>As A&S Lifts continued to grow, they expanded their operations to include maintenance and repair services, as well as custom elevator design for high-end residential properties. They also started to experiment with new technologies, such as remote monitoring and predictive maintenance, which helped them stay ahead of the curve in the industry.</p>
+					</div>
 				</div>
 			</div>
 		</section>

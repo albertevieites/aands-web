@@ -12,11 +12,25 @@
 		margin-bottom: 1.9rem;
 
 		@include nine__hundred {
-			font-size: $f-s-1700;
+			font-size: 4.5rem;
 		}
 
 		@include seven__hundred {
-			font-size: $f-s-1300;
+			font-size: 3.7rem;
+		}
+
+		@include six__hundred {
+			font-size: 3rem;
+		}
+
+		@include five__hundred { 
+			font-size: 2.5rem;
+		}
+
+		@include four__hundred { 
+			font-size: 2rem;
+			font-weight: 600;
+			line-height: 2.5rem;
 		}
 	}
 
@@ -30,6 +44,10 @@
 
 		@include seven__hundred {
 			font-size: $f-s-440;
+		}
+
+		@include four__hundred {
+			display: none;
 		}
 
 		span {

@@ -12,7 +12,11 @@
 
 		@include seven__hundred {
 			width: 100%;
-			line-height: 1.7rem;
+			line-height: 1.5rem;
+		}
+
+		@include four__hundred {
+			line-height: 2rem;
 		}
 	}
 
@@ -28,6 +32,8 @@
 		@include seven__hundred {
 			width: 100%;
 			margin: 0;
+
+			font-size: 1rem;
 		}
 	}
 
@@ -44,6 +50,12 @@
 
 	&__text {
 		padding-top: 1rem;
+
+		@include four__hundred {
+			:nth-child(2) {
+				display: none;
+			}
+		}
 	}
 
 	&__button {

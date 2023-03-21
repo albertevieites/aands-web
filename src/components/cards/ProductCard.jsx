@@ -5,9 +5,6 @@ import ButtonDetails from '../tokens/buttons/DetailsBtn';
 import { productData } from '../../data/products';
 
 export default function ProductCard() {
-
-	console.log(productData);
-
 	return (
 		<>
 			{/* Product Card Div */}
