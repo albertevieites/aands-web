@@ -3,6 +3,7 @@
 import { ScrollSmoother } from 'gsap/dist/ScrollSmoother';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'; */
 import Head from 'next/head';
+import Events from 'src/components/sections/Events';
 /* import { useRef } from 'react'; */
 
 // Components
@@ -10,7 +11,6 @@ import Separator from 'src/components/tokens/Separator';
 import Features from '../components/sections/Features';
 import Hero from '../components/sections/Hero';
 import Last from '../components/sections/Last';
-import Line from 'src/components/tokens/Line';
 import Partners from '../components/sections/Partners';
 import Social from '../components/sections/Social';
 import Story from '../components/sections/Story';
@@ -70,9 +70,10 @@ export default function Home() {
 					<Story className='gsap__story' dataSpeed='1' />
 					{/* Team section */}
 					<Team className='gsap__team' dataSpeed='1' />
+					{/* Events section */}
+					<Events />
 					{/* Last action section */}
 					<Last className='gsap__last' dataSpeed='1' />
-					<Line />
 					{/* <Footer /> */}
 				</div>
 			</main>
