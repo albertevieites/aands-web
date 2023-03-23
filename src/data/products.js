@@ -109,18 +109,22 @@ export const productData = [
 		code: 'advertisim',
 		img: [
 			{
+				id: 301,
 				src: '/images/products/advertisim/advertisim_1.png',
 				alt: 'Advertisim photo detail',
 			},
 			{
+				id: 302,
 				src: '/images/products/advertisim/advertisim_2.jpg',
 				alt: 'advertisim photo detail',
 			},
 			{
+				id: 303,
 				src: '/images/products/advertisim/advertisim_3.png',
 				alt: 'avertisim photo detail',
 			},
 			{
+				id: 304,
 				src: '/images/products/advertisim/advertisim_4.jpeg',
 				alt: 'avertisim photo detail',
 			},
@@ -178,14 +182,17 @@ export const productData = [
 		code: 'gsm',
 		img: [
 			{
+				id: 401,
 				src: '/images/products/gsm/gsm_1.png',
 				alt: 'GSM photo detail',
 			},
 			{
+				id: 402,
 				src: '/images/products/gsm/gsm_2.png',
 				alt: 'gsm photo detail',
 			},
 			{
+				id: 403,
 				src: '/images/products/gsm/gsm_3.png',
 				alt: 'gsm photo detail',
 			},
@@ -218,6 +225,7 @@ export const productData = [
 		code: 'switch',
 		img: [
 			{
+				id: 501,
 				src: '/images/products/switch/switch_1.png',
 				alt: 'switch photo detail',
 			},
@@ -250,6 +258,7 @@ export const productData = [
 		code: 'tele-indicators',
 		img: [
 			{
+				id: 601,
 				src: '/images/products/tele-indicators/tele-indicators_1.png',
 				alt: 'tele-indicators photo detail',
 			},
@@ -282,6 +291,7 @@ export const productData = [
 		code: 'virtual-accessible-cop',
 		img: [
 			{
+				id: 701,
 				src: '/images/products/cop/cop_1.png',
 				alt: 'cop photo detail',
 			},
