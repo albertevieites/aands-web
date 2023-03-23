@@ -66,10 +66,16 @@ export default function Home() {
 					<Separator />
 					{/* Social section */}
 					<Social className='gsap__social' dataSpeed='1' />
+					{/* Separator */}
+					<Separator />
 					{/* Story section */}
 					<Story className='gsap__story' dataSpeed='1' />
+					{/* Separator */}
+					<Separator />
 					{/* Team section */}
 					<Team className='gsap__team' dataSpeed='1' />
+					{/* Separator */}
+					<Separator />
 					{/* Events section */}
 					<Events />
 					{/* Last action section */}
