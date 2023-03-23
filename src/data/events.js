@@ -10,7 +10,7 @@ export const eventsData = [
     "img": "/images/events/LA.jpg",
     "title": "Los Angeles",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos unde atque doloremque dolor earum deserunt pariatur id nobis consequatur soluta placeat, sequi at possimus ab ex autem, magnam ducimus.",
-    "location": "Fira Barcelona",
+    "location": "Los Angeles",
     "date": "02-01-2020"
   },
   {
