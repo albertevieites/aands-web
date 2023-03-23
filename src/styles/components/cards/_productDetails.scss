@@ -25,6 +25,8 @@
 	&__images {
 		display: grid;
 		grid-template-columns: 25% 75%;
+		align-items: center;
+
 		width: 100%;
 
 		@include eleven__hundred {
@@ -44,9 +46,11 @@
 			display: flex;
 		}
 
-		img {
-			margin-bottom: 0.7rem;
+		&>div {
+			margin-bottom: 1rem;
+		}
 
+		img {
 			&:first-child {
 				border-top-left-radius: 1rem;
 				border-top-right-radius: 1rem;
@@ -86,6 +90,7 @@
 
 			font-size: $f-s-700;
 			font-weight: $f-w-600;
+			line-height: 2rem;
 
 			@include four__hundred {
 				line-height: 2rem;
