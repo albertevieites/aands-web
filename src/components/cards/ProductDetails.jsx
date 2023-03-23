@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function ProductDetails(props) {
-	const { product, longDescription, img, featureImg } = props.details;
+	const { product, longDescription, img, featureIcn } = props.details;
 	const [selectedImg, setSelectedImg] = useState(img[0]);
 
 	const handleClick = newImg => {
@@ -20,8 +20,8 @@ export default function ProductDetails(props) {
 										key={image.id}
 										src={image.src}
 										alt={image.alt}
-										width={1000}
-										height={1000}
+										width={500}
+										height={500}
 										className={selectedImg.id === image.id ? "active" : ''}
 										onClick={() => handleClick(image)}
 									/>
@@ -46,7 +46,7 @@ export default function ProductDetails(props) {
 					</div>
 
 					<div className='product--details__content--features'>
-						{featureImg.map(icon => {
+						{featureIcn.map(icon => {
 							return (
 								<div
 									key={icon.id}

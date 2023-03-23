@@ -24,56 +24,35 @@ export const productData = [
 				alt: 'GSR photo detail',
 			},
 		],
-		product: 'GSR Gsm Smart Router',
+		product: 'GSR · GSM Smart Router',
 		description:
-			'GSR - IoT device for elevator sector, provides compliance, control connection, telemetry, telecontrol, WiFi and customization for a complete solution.',
+			'GSR · GSM - Smart Router is a device specially designed for the elevator industry and IoT networks.',
 		longDescription:
 			'GSR – Gsm Smart Router is the first IoT communications device for the elevation sector, developed entirely by Nayar. With an increasing volume of data the market demands a multipurpose device with higher speed, both processing and data transmission. GSR - IoT device for elevator sector, provides compliance, control connection, telemetry, telecontrol, WiFi and customization for a complete solution.',
-		icn: [
+		featureIcn: [
 			{
-				src: '/icons/google.svg',
-				alt: 'google',
-				text: 'Google',
+				text: 'Emergency phone line',
+				src: '/icons/features/emergency.svg',
 			},
 			{
-				src: '/icons/linkedin.svg',
-				alt: 'linkedin',
-				text: 'LinkedIn',
-			},
-			{
-				src: '/icons/facebook.svg',
-				alt: 'facebook',
-				text: 'Facebook',
-			},
-		],
-		featureImg: [
-			{
-				text: 'WiFi',
+				text: 'Wifi connectivity',
 				src: '/icons/features/wifi.svg',
 			},
 			{
-				text: '4G Connectivity',
-				src: '/icons/features/4g.svg',
+				text: "Integration with Nayar System's services",
+				src: '/icons/features/integration.svg',
 			},
 			{
-				text: 'Telephone SLIC',
-				src: '/icons/features/phone.svg',
+				text: 'Elevator connection: controller, VVVF',
+				src: '/icons/features/elevator.svg',
 			},
 			{
-				text: 'Output 12V',
-				src: '/icons/features/plug.svg',
+				text: 'Customizable software',
+				src: '/icons/features/customize.svg',
 			},
 			{
-				text: 'Ehternet',
-				src: '/icons/features/ethernet.svg',
-			},
-			{
-				text: 'USB Extension',
-				src: '/icons/features/usb.svg',
-			},
-			{
-				text: 'Battery',
-				src: '/icons/features/battery.svg',
+				text: 'GSR PDF',
+				src: '/icons/features/pdf.svg',
 			},
 		],
 	},
@@ -82,38 +61,46 @@ export const productData = [
 		code: 'nearkey',
 		img: [
 			{
+				id: 201,
 				src: '/images/products/nearkey/nearkey_1.png',
 				alt: 'nearkey photo detail',
 			},
 			{
+				id: 202,
 				src: '/images/products/nearkey/nearkey_2.jpg',
 				alt: 'nearkey photo detail',
 			},
 			{
+				id: 203,
 				src: '/images/products/nearkey/nearkey_3.jpg',
 				alt: 'nearkey photo detail',
 			},
 		],
 		product: 'Nearkey',
 		description:
-			'Nearkey is a smartphone-based access control device, keyless, secure and with access management, used for elevators, electric doors, restricted areas, offices and homes.',
+			'Nearkey is an access control device for electric drivesusing the smartphone. It substitutes keys and physical remotes for virtual ones.',
 		longDescription:
 			'With Nearkey, users can easily grant access to guests, family members or employees, with the ability to monitor and manage all accesses in real-time from their smartphone. The keyless technology eliminates the need for physical keys, making it convenient and hassle-free for users. Additionally, Nearkey is equipped with advanced security features such as encrypted communication and secure access codes, providing peace of mind and protection against unauthorized access.',
-		icn: [
+		featureIcn: [
 			{
-				src: '/icons/google.svg',
-				alt: 'google',
-				text: 'Google',
+				text: 'App available for iOS and Android devices',
+				src: '/icons/features/app.svg',
 			},
 			{
-				src: '/icons/linkedin.svg',
-				alt: 'linkedin',
-				text: 'LinkedIn',
+				text: 'Maximum security access',
+				src: '/icons/features/security.svg',
 			},
 			{
-				src: '/icons/facebook.svg',
-				alt: 'facebook',
-				text: 'Facebook',
+				text: 'Works without an internet connection',
+				src: '/icons/features/no_internet.svg',
+			},
+			{
+				text: 'Data and hour restrictions',
+				src: '/icons/features/restrictionshield.svg',
+			},
+			{
+				text: 'Nerakey PDF',
+				src: '/icons/features/pdf.svg',
 			},
 		],
 	},
@@ -134,33 +121,16 @@ export const productData = [
 				alt: 'avertisim photo detail',
 			},
 			{
-				src: '/images/products/advertisim/advertisim_4.jpg',
+				src: '/images/products/advertisim/advertisim_4.jpeg',
 				alt: 'avertisim photo detail',
 			},
 		],
 		product: 'Advertisim',
 		description:
-			'This a device that displays real-time elevator information and advertising, monitoring elevator vibrations, with various connectivity options and independent positional device.',
+			'Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content.',
 		longDescription:
 			"The device is equipped with a high-resolution screen that displays real-time elevator information, including floor and direction, as well as targeted advertising content to help generate revenue. Its advanced monitoring system allows for early detection of elevator vibrations and potential malfunctions, ensuring the safety of passengers and preventing costly downtime.The device also offers various connectivity options, including Wi-Fi, Ethernet, and cellular, providing flexible and reliable communication with the elevator management system. Additionally, the device's independent positional device allows for precise and accurate tracking of the elevator's position and movement, providing valuable data for maintenance and operational analysis.",
-		icn: [
-			{
-				src: '/icons/google.svg',
-				alt: 'google',
-				text: 'Google',
-			},
-			{
-				src: '/icons/linkedin.svg',
-				alt: 'linkedin',
-				text: 'LinkedIn',
-			},
-			{
-				src: '/icons/facebook.svg',
-				alt: 'facebook',
-				text: 'Facebook',
-			},
-		],
-		featureImg: [
+		featureIcn: [
 			{
 				text: 'Visualization of floors',
 				src: '/icons/features/eye.svg',
@@ -225,7 +195,7 @@ export const productData = [
 			'GSM is a versatile IoT device with 5 Ethernet ports, USB, Linux OS, easy setup, and secure communications. Can communicate with industrial machinery via different interfaces.',
 		longDescription:
 			'GSM offers high-speed communication with industrial machinery, providing real-time data transfer and control, even in remote and harsh environments. With its 5 Ethernet ports, USB connectivity, and Linux OS, it provides a versatile and flexible solution for a wide range of industrial applications.The device is easy to set up, with a user-friendly interface and intuitive navigation, allowing for quick and seamless integration into existing systems. Additionally, its secure communications ensure that data is transmitted and stored securely, protecting sensitive information and preventing unauthorized access.',
-		icn: [
+		featureIcn: [
 			{
 				src: '/icons/google.svg',
 				alt: 'google',
@@ -257,7 +227,7 @@ export const productData = [
 			'Nayar Switch allows elevator cabins to access the internet via existing elevator hose, providing affordable, safe, seamless internet connection. Also allows for WiFi or Ethernet connectivity.',
 		longDescription:
 			'Nayar Switch provides a revolutionary solution for elevator cabins, offering fast and reliable internet access via existing elevator hose. This innovative technology eliminates the need for additional cabling, making it an affordable and safe option for elevators of all sizes.In addition to its internet connectivity, Nayar Switch also offers WiFi or Ethernet connectivity, allowing for a seamless integration into existing network infrastructure. This provides a reliable and secure connection, allowing elevator passengers to access the internet, check their emails, or stream videos while they wait.',
-		icn: [
+		featureIcn: [
 			{
 				src: '/icons/google.svg',
 				alt: 'google',
@@ -289,7 +259,7 @@ export const productData = [
 			'Nayar Switch allows elevator cabins to access the internet via existing elevator hose, providing affordable, safe, seamless connection. Also allows for WiFi or Ethernet connectivity.',
 		longDescription:
 			"The Nayar Switch also provides enhanced security for elevator cabins, with encrypted communication and secure access codes to protect against unauthorized access. The device's real-time monitoring system ensures that data is transmitted and stored securely, ensuring the privacy and security of elevator passengers.In addition, Nayar Switch allows for the integration of various digital services, such as digital signage, passenger information systems, and entertainment content, enhancing the passenger experience and providing new revenue streams.",
-		icn: [
+		featureIcn: [
 			{
 				src: '/icons/google.svg',
 				alt: 'google',
@@ -321,7 +291,7 @@ export const productData = [
 			"Nayar Systems' Pulse app allows users to call elevators using smartphones, rather than physical buttons. Works offline, requires BVA device installation in lift car and each floor.",
 		longDescription:
 			'The Pulse app by Nayar Systems is a game-changer in the elevator industry, offering a modern and convenient way to call elevators. With the ability to call elevators using a smartphone, users no longer have to rely on physical buttons, saving time and enhancing the overall experience.The app works offline, ensuring reliable and seamless operation even in areas with poor internet connectivity. The app requires the installation of a BVA device in the lift car and on each floor, providing real-time information and control of the elevator.',
-		icn: [
+		featureIcn: [
 			{
 				src: '/icons/google.svg',
 				alt: 'google',
