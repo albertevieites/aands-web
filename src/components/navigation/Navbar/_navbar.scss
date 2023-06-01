@@ -1,0 +1,54 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 100%;
+	margin: 0 auto;
+	background-color: $clr-background;
+
+	padding: 0 2rem;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem 0;
+		background-color: $clr-background;
+
+		color: $clr-white;
+	}
+
+	img {
+		height: auto;
+	}
+
+	a {
+		font-size: $f-s-420;
+	}
+
+	&__brand {
+		width: 5rem;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+
+		height: 100%;
+		padding-right: 2em;
+	}
+}

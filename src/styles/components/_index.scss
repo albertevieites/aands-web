@@ -1,24 +1,34 @@
-@forward './layout/layout';
+@forward '../../components/layout/layout';
 
-@forward './navigation/burger';
-@forward './navigation/footer';
-@forward './navigation/navbar';
+@forward '../../components/navigation/Burger/burger';
+@forward '../../components/navigation/Footer/footer';
+@forward '../../components/navigation/Navbar/navbar';
 
-@forward './cards/eventsCard';
-@forward './cards/featureSmallCard';
-@forward './cards/featureLargeCard';
-@forward './cards/socialCard';
-@forward './cards/teamCard';
-@forward './cards/productCard';
-@forward './cards/productDetails';
+@forward '../../components/cards/EventsCard/eventsCard';
+@forward '../../components/cards/FeatureLargeCard/featureLargeCard';
+@forward '../../components/cards/FeatureSmallCard/featureSmallCard';
+@forward '../../components/cards/ProductCard/productCard';
+@forward '../../components/cards/ProductDetails/productDetails';
+@forward '../../components/cards/SocialCard/socialCard';
+@forward '../../components/cards/TeamCard/teamCard';
 
-@forward './tokens/buttons/callBtn';
-@forward './tokens/buttons/contactBtn';
-@forward './tokens/buttons/detailsBtn.scss';
-@forward './tokens/buttons/productsBtn';
+@forward '../../components/sections/Events/events';
+@forward '../../components/sections/Features/features';
+@forward '../../components/sections/Hero/hero';
+@forward '../../components/sections/Last/last';
+@forward '../../components/sections/Partners/partners';
+@forward '../../components/sections/Social/social';
+@forward '../../components/sections/Story/story';
+@forward '../../components/sections/Team/team';
 
-@forward './utils/form';
-@forward './utils/map';
 
-@forward './tokens/line';
-@forward './tokens/separator';
+@forward '../../components/tokens/buttons/CallBtn/callBtn';
+@forward '../../components/tokens/buttons/ContactBtn/contactBtn';
+@forward '../../components/tokens/buttons/DetailsBtn/detailsBtn';
+@forward '../../components/tokens/buttons/ProductsBtn/productsBtn';
+@forward '../../components/tokens/decorators/Line/line';
+@forward '../../components/tokens/decorators/Separator/separator';
+
+@forward '../../components/utils/Form/form';
+@forward '../../components/utils/Map/map';
+
