@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { eventsData } from "src/data/events"
+
+import { eventsData } from "../../../data/events"
 
 export default function EventsCard() {
   return (

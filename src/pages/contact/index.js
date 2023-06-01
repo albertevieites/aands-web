@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Components
-import ButtonCall from '../../components/tokens/buttons/CallBtn';
-import Form from '../../components/utils/Form';
-import Map from '../../components/utils/Map';
+import ButtonCall from '../../components/tokens/buttons/CallBtn/CallBtn';
+import Form from '../../components/utils/Form/Form';
+import Map from '../../components/utils/Map/Map';
+import Separator from '../../components/tokens/decorators/Separator/Separator';
 
 // Images
-import Separator from 'src/components/tokens/Separator';
 import CallIcon from '/public/icons/call.svg';
 import EmailIcon from '/public/icons/email.svg';
 import MapIcon from '/public/icons/map.svg';
