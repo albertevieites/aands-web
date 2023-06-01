@@ -3,18 +3,18 @@
 import { ScrollSmoother } from 'gsap/dist/ScrollSmoother';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'; */
 import Head from 'next/head';
-import Events from 'src/components/sections/Events';
 /* import { useRef } from 'react'; */
 
 // Components
-import Separator from 'src/components/tokens/Separator';
-import Features from '../components/sections/Features';
-import Hero from '../components/sections/Hero';
-import Last from '../components/sections/Last';
-import Partners from '../components/sections/Partners';
-import Social from '../components/sections/Social';
-import Story from '../components/sections/Story';
-import Team from '../components/sections/Team';
+import Events from '../components/sections/Events/Events';
+import Features from '../components/sections/Features/Features';
+import Hero from '../components/sections/Hero/Hero';
+import Last from '../components/sections/Last/Last';
+import Partners from '../components/sections/Partners/Partners';
+import Social from '../components/sections/Social/Social';
+import Story from '../components/sections/Story/Story';
+import Team from '../components/sections/Team/Team';
+import Separator from '../components/tokens/decorators/Separator/Separator';
 
 // Helpers
 /* import { useIsomorphicLayoutEffect } from 'src/helpers/useIsomorphicLayoutEffect'; */

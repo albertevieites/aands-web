@@ -1,6 +1,6 @@
-import Footer from '../navigation/Footer';
-import Navbar from '../navigation/Navbar';
-import Line from '../tokens/Line';
+import Footer from '../navigation/Footer/Footer';
+import Navbar from '../navigation/Navbar/Navbar';
+import Line from '../tokens/decorators/Line/Line';
 
 export default function Layout({ children }) {
 	return (

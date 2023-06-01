@@ -254,39 +254,6 @@ export const productData = [
 		],
 	},
 	{
-		id: 6,
-		code: 'tele-indicators',
-		img: [
-			{
-				id: 601,
-				src: '/images/products/tele-indicators/tele-indicators_1.png',
-				alt: 'tele-indicators photo detail',
-			},
-		],
-		product: 'Tele-indicators',
-		description:
-			'Nayar Switch allows elevator cabins to access the internet via existing elevator hose, providing affordable, safe, seamless connection. Also allows for WiFi or Ethernet connectivity.',
-		longDescription:
-			"The Nayar Switch also provides enhanced security for elevator cabins, with encrypted communication and secure access codes to protect against unauthorized access. The device's real-time monitoring system ensures that data is transmitted and stored securely, ensuring the privacy and security of elevator passengers.In addition, Nayar Switch allows for the integration of various digital services, such as digital signage, passenger information systems, and entertainment content, enhancing the passenger experience and providing new revenue streams.",
-		featureIcn: [
-			{
-				src: '/icons/google.svg',
-				alt: 'google',
-				text: 'Google',
-			},
-			{
-				src: '/icons/linkedin.svg',
-				alt: 'linkedin',
-				text: 'LinkedIn',
-			},
-			{
-				src: '/icons/facebook.svg',
-				alt: 'facebook',
-				text: 'Facebook',
-			},
-		],
-	},
-	{
 		id: 7,
 		code: 'virtual-accessible-cop',
 		img: [
