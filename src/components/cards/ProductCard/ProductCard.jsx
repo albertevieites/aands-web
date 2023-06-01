@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import ButtonDetails from '../../tokens/buttons/DetailsBtn';
+import ButtonDetails from '../../tokens/buttons/DetailsBtn/DetailsBtn';
 
 import { productData } from '../../../data/products';
 
