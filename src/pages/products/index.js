@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import ProductDetails from 'src/components/cards/ProductDetails';
-import Separator from 'src/components/tokens/Separator';
 
-import ProductCard from '../../components/cards/ProductCard';
+import ProductCard from '../../components/cards/ProductCard/ProductCard';
+import ProductDetails from '../../components/cards/ProductDetails/ProductDetails';
+import Separator from '../../components/tokens/decorators/Separator/Separator';
+
 
 export default function Products() {
 	const [selectedId, setSelectedId] = useState('');
