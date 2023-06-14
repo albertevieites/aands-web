@@ -1,4 +1,5 @@
 $breackpoints: (
+	'three__hundred': 390px,
 	'four__hundred': 461px,
 	'five__hundred': 560px,
 	'six__hundred': 640px,
@@ -9,6 +10,11 @@ $breackpoints: (
 	'twelve__hundred': 1200px,
 );
 
+@mixin three__hundred{
+	@media screen and (max-width: map-get($breackpoints, 'three__hundred')) {
+		@content;
+	}
+}
 @mixin four__hundred{
 	@media screen and (max-width: map-get($breackpoints, 'four__hundred')) {
 		@content;
