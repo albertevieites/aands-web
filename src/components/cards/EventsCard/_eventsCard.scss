@@ -4,72 +4,59 @@
 @use '../../../styles/abstracts/variables' as *;
 
 .events--card {
-  position: relative;
-  display: flex;
+	max-width: 20rem;
+	margin: 0 2rem;
+	margin-bottom: 3rem;
+	background-color: $clr-card;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
 
-  height: 20rem;
-  margin: 0 2rem;
-  margin-bottom: 3rem;
-  background-color: $clr-card;
-  border: 0.01rem solid $clr-border-card;
-  border-radius: 2rem;
+	&__image {
+    padding: 1rem;
+		img {
+			height: auto;
 
-  img {
-    position: absolute;
-    left: -2rem;
-    top: 1.5rem;
+			border-radius: 1.3rem;
+		}
+	}
 
-    width: 25rem;
-    height: 17rem;
-    border-radius: 2rem;
-  }
+	&__content {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
 
-  &__content {
-    display: flex;
-    align-items: center;
+		h3 {
+			font-size: $f-s-480;
+			font-weight: $f-w-600;
+			letter-spacing: 0.04rem;
 
-    width: 100%;
+      margin-bottom: 1rem;
+		}
 
-    &--invisible {
-      width: 35%;
-    }
+		p {
+			font-size: $f-s-380;
+			font-weight: $f-w-200;
+			letter-spacing: 0.02rem;
 
-    &--text {
-      width: 30%;
+      margin-bottom: 1.3rem;
+		}
 
-
-      h3 {
-        margin-bottom: 1rem;
-
-        font-size: 1.7rem;
-        font-weight: 600;
-      }
-    }
-
-    &--loc {
+    &--date {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
 
-      width: 30%;
-      height: 85%;
-
-      text-align: end;
-
-      h4 {
-        padding-bottom: 1rem;
-        font-size: 1.3rem;
-        font-weight: 600;
+      @include three__hundred {
+        flex-direction: column;
       }
 
-      p {
+      span {
         font-weight: 200;
+
+        @include three__hundred {
+          padding-top: .3rem;
+        }
       }
     }
-  }
-
-  &__date {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 3.5rem;
-  }
+	}
 }

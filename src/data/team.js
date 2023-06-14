@@ -1,20 +1,19 @@
 export const teamData = [
   {
-    "img": "/images/team/eugenia-grande.webp",
+    "img": "/images/team/eugenia-grande.png",
     "name": "Eugenia Grande",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum massa mi, eget pretium libero tristique vel.",
+    "description": "CEO",
     "alt": "Eugenia's photo"
   },
   {
-    "img": "/images/team/rocio-durcal.webp",
+    "img": "/images/team/rocio-durcal.png",
     "name": "Rocío Dúrcal",
-    "description": "Superb work and flawless. Nothing is too much trouble for these guys.Nam sed rhoncus quam. Phasellus tincidunt tempor.",
-    "alt": "Rocío's photo"
+    "description": "General Manager"
   },
   {
-    "img": "/images/team/peter-gabriel.webp",
+    "img": "/images/team/peter-gabriel.png",
     "name": "Peter Gabriel",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Director",
     "alt": "Peter's photo"
   }
 ]
