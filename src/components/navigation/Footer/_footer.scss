@@ -5,6 +5,7 @@
 
 .footer {
 	padding: 1rem 2rem;
+	border-top: .07rem solid $clr-border-card;
 
 	color: $clr-white;
 	text-align: center;
@@ -125,4 +126,12 @@
 		font-size: $f-s-340;
 		color: $clr-light-grey;
 	}
+}
+
+.footer--fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
 }

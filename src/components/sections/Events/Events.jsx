@@ -3,7 +3,6 @@ import EventsCard from '../../cards/EventsCard/EventsCard';
 import { eventsData } from '../../../data/events';
 
 function Events() {
-	console.log(eventsData);
 	return (
 		<section className='events'>
 			<div className='events__container'>

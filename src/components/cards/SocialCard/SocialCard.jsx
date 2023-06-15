@@ -1,38 +1,34 @@
 import Image from 'next/image';
 
-import { socialData } from '../../../data/social';
-
-export default function SocialCard() {
+export default function SocialCard(props) {
+	const { id, comment, name, socialImg, img, stars } = props;
 	return (
-		<>
-			{socialData.map((data, key) => {
-				return (
-					<div key={key} className='social--card'>
+					<div key={id} className='social--card'>
 						<div className='social--card__comment'>
-							<p className='social--card--paragraph'>{data.comment}</p>
+							<p className='social--card--paragraph'>{comment}</p>
 						</div>
 
 						<div className='social--card__user'>
 							<div className='social--card__user--persona'>
 								<Image
 									className='social--card__image'
-									src={data.img}
-									alt={data.alt}
+									src={img}
+									alt={`${name} photo`}
 									width={50}
 									height={50}
 								/>
-								<h5 className='social--card__name'>{data.name}</h5>
+								<h5 className='social--card__name'>{name}</h5>
 							</div>
 
 							<div className='social--card__user--social'>
 								<Image
-									src={data.socialImg}
-									alt='google icon'
+									src={socialImg}
+									alt='social icon'
 									width={15}
 									height={15}
 								/>
 								<Image
-									src={data.stars && data.stars}
+									src={stars && stars}
 									alt='stars'
 									width={60}
 									height={16}
@@ -41,7 +37,4 @@ export default function SocialCard() {
 						</div>
 					</div>
 				);
-			})}
-		</>
-	);
 }

@@ -80,7 +80,6 @@ export default function Home() {
 					<Events />
 					{/* Last action section */}
 					<Last className='gsap__last' dataSpeed='1' />
-					{/* <Footer /> */}
 				</div>
 			</main>
 		</>
