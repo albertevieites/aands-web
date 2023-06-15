@@ -10,7 +10,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@next/font": "^13.4.4",
     "@react-google-maps/api": "^2.18.1",
     "eslint-config-next": "^13.4.4",
     "framer-motion": "^10.12.16",
