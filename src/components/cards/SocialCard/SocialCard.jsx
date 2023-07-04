@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 export default function SocialCard(props) {
 	const { id, comment, name, socialImg, img, stars } = props;
+
 	return (
 					<div key={id} className='social--card'>
 						<div className='social--card__comment'>
