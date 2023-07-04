@@ -11,7 +11,7 @@ import Separator from '../../components/tokens/decorators/Separator/Separator';
 import CallIcon from '/public/icons/call.svg';
 import EmailIcon from '/public/icons/email.svg';
 import MapIcon from '/public/icons/map.svg';
-import Connectivity from '../../components/animations/Connectivity/Connectivity';
+// import Connectivity from '../../components/animations/Connectivity/Connectivity';
 import Card from '../../components/animations/Card/Card';
 
 export default function Contact() {
