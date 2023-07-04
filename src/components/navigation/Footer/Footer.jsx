@@ -1,7 +1,7 @@
 // Modules
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 // Components
 import CallBtn from '../../tokens/buttons/CallBtn/CallBtn';
@@ -13,11 +13,12 @@ import googleIcon from '/public/icons/google.svg';
 import linkedinIcon from '/public/icons/linkedin.svg';
 
 export default function Footer() {
-	const router = useRouter();
-	const isHomePage = router.pathname === '/';
+	// const router = useRouter();
+	// const isHomePage = router.pathname === '/';
+	// <footer className={`footer${isHomePage ? '' : ' footer--fixed'}`}></footer>
 
 	return (
-		<footer className={`footer${isHomePage ? '' : ' footer--fixed'}`}>
+		<footer className="footer">
 			<div className="footer__container">
 				<div className="footer__top">
 					<div className='footer__image'>
