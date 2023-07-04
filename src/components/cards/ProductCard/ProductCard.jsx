@@ -11,20 +11,21 @@ export default function ProductCard() {
 			{productData.map((product) => {
 				return (
 					<div key={product.id} className='product--card'>
-						<div className='product--card__image--container'>
-							<div className="product--card__image--img">
+						<div className='product--card__image'>
+
 								<Image
-									className='product--card__image'
 									src={product.img[0].src}
 									alt={product?.img[0].alt}
 									width={1000}
 									height={1000}
 								/>
-							</div>
+
 						</div>
 
-						<h3>{product.product}</h3>
-						<p>{product.description}</p>
+						<div className="product--card__content">
+							<h3>{product.product}</h3>
+							<p>{product.description}</p>
+						</div>
 
 						<div className="product--card__button">
 							<ButtonDetails link={`/products/${product.code}`}  />
