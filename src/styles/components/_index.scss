@@ -6,6 +6,7 @@
 @forward '../../components/navigation/Footer/footer';
 @forward '../../components/navigation/Navbar/navbar';
 
+// Cards
 @forward '../../components/cards/EventsCard/eventsCard';
 @forward '../../components/cards/FeatureLargeCard/featureLargeCard';
 @forward '../../components/cards/FeatureSmallCard/featureSmallCard';
@@ -13,7 +14,9 @@
 @forward '../../components/cards/ProductDetails/productDetails';
 @forward '../../components/cards/SocialCard/socialCard';
 @forward '../../components/cards/TeamCard/teamCard';
+@forward '../../components/cards/ModalCard/modalCard';
 
+// Sections
 @forward '../../components/sections/Events/events';
 @forward '../../components/sections/Features/features';
 @forward '../../components/sections/Hero/hero';
@@ -30,6 +33,7 @@
 @forward '../../components/tokens/buttons/ProductsBtn/productsBtn';
 @forward '../../components/tokens/decorators/Line/line';
 @forward '../../components/tokens/decorators/Separator/separator';
+@forward '../../components/tokens/modal/modal';
 
 @forward '../../components/utils/Form/form';
 @forward '../../components/utils/Map/map';
