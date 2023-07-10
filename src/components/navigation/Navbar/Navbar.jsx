@@ -5,17 +5,22 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 // Components
-import ButtonContact from '../../tokens/buttons/ContactBtn/ContactBtn';
+import ContactBtn from '../../tokens/buttons/ContactBtn/ContactBtn';
 import Separator from '../../tokens/decorators/Separator/Separator';
 import Burger from '../Burger/Burger';
 
 // Images
+import Modal from '../../tokens/modal/Modal';
 import brandLogo from '/public/icons/aands.svg';
 
+// NAVBAR COMPONENT
 export default function Navbar() {
 	const router = useRouter();
 	const pathname = router.pathname;
+
+	// UseState
 	const [showBurger, setShowBurger] = useState(false);
+	const [openModal, setOpenModal] = useState(false);
 
 	// 770px
 	useEffect(() => {
@@ -32,11 +37,18 @@ export default function Navbar() {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
+	// Close Hamburger
 	const handleClose = () => {
 		console.log('Closing burger menu');
 		setShowBurger(false);
 	};
 
+	// Handle modal toggle clicking User Links anchor
+	const handleModalToggle = () => {
+		setOpenModal(prevState => !prevState);
+	};
+
+	// NAVBAR COMPONENT RENDERING
 	return (
 		<nav className='navbar'>
 			<div className='navbar__top'>
@@ -57,25 +69,21 @@ export default function Navbar() {
 											: { display: 'none' }
 									}
 								>
-									<a href='#story'>Our Story</a>
-								</li>
-								<li
-									style={
-										pathname === '/'
-											? { display: 'block' }
-											: { display: 'none' }
-									}
-								>
-									<a href='#events'>Events</a>
+									<a onClick={handleModalToggle}>
+										User Links
+									</a>
 								</li>
 							</ul>
 						</nav>
-						<ButtonContact />
+						<ContactBtn />
 					</div>
 				)}
 
 				{showBurger && <Burger handleClose={handleClose} />}
 			</div>
+			{openModal && (
+				<Modal open={openModal} onClose={() => setOpenModal(false)} />
+			)}
 			<Separator />
 		</nav>
 	);

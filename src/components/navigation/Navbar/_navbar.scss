@@ -50,5 +50,27 @@
 
 		height: 100%;
 		padding-right: 2em;
+
+		a {
+			color: $clr-goldweb;
+			padding: 0.7em 2.3em;
+
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+
+			&:hover {
+				color: 0 0 1rem $clr-goldweb-glow;
+
+				text-shadow: 0 0 .7rem $clr-goldweb;
+				-moz-transition: all 0.2s ease-in;
+				-o-transition: all 0.2s ease-in;
+				-webkit-transition: all 0.2s ease-in;
+				transition: all 0.2s ease-in;
+
+				cursor: pointer;
+			}
+		}
 	}
 }
