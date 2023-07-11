@@ -5,9 +5,11 @@ $breackpoints: (
 	'six__hundred': 640px,
 	'seven__hundred': 770px,
 	'nine__hundred': 927px,
+	'nine-forty__hundred': 947px,
 	'thousand': 1000px,
 	'eleven__hundred': 1100px,
 	'twelve__hundred': 1200px,
+	'thirteen__hundred': 1364px,
 );
 
 @mixin three__hundred{
@@ -45,6 +47,11 @@ $breackpoints: (
 		@content;
 	}
 }
+@mixin nine-forty__hundred {
+	@media screen and (min-width: map-get($breackpoints, 'nine-forty__hundred')) {
+		@content;
+	}
+}
 @mixin thousand{
 	@media screen and (max-width: map-get($breackpoints, 'thousand')) {
 		@content;
@@ -57,6 +64,11 @@ $breackpoints: (
 }
 @mixin twelve__hundred {
 	@media screen and (max-width: map-get($breackpoints, 'twelve__hundred')) {
+		@content;
+	}
+}
+@mixin thirteen__hundred {
+	@media screen and (min-width: map-get($breackpoints, 'thirteen__hundred')) {
 		@content;
 	}
 }
