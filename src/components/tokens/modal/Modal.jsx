@@ -30,7 +30,7 @@ function Modal({ open, onClose }) {
 
 	if (!open) return null;
 	return (
-		<div className='modal' ref={modalRef}>
+		<div className='modal' ref={modalRef} style={{ maxHeight: "80dvh", overflowY: "scroll" }}>
 			<div className='modal__grid'>
 				{appsData.map(eachCard => (
 					<ModalCard key={eachCard.id} props={eachCard} />

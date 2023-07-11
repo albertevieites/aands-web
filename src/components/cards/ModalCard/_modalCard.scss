@@ -4,6 +4,7 @@
 
 .modal--card {
 	display: flex;
+  align-items: center;
   gap: 2rem;
 
   min-width: 25rem;
@@ -15,7 +16,7 @@
 
 	&__logo {
 		img {
-			width: 6rem;
+			width: 5.5rem;
 			height: auto;
 		}
 
@@ -38,9 +39,13 @@
       padding-bottom: .3rem;
     }
 
+    img {
+      width: 80%;
+    }
+
 		&--logos {
 			display: flex;
-      gap: 1rem;
+      gap: .3rem;
 		}
 	}
 }
