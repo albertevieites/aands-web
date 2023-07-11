@@ -13,6 +13,9 @@ import Burger from '../Burger/Burger';
 import Modal from '../../tokens/modal/Modal';
 import brandLogo from '/public/icons/aands.svg';
 
+// Context
+import { useModal } from '../../../context/ModalContext';
+
 // NAVBAR COMPONENT
 export default function Navbar() {
 	const router = useRouter();
@@ -20,7 +23,8 @@ export default function Navbar() {
 
 	// UseState
 	const [showBurger, setShowBurger] = useState(false);
-	const [openModal, setOpenModal] = useState(false);
+	// const [openModal, setOpenModal] = useState(false);
+	const { openModal, setOpenModal } = useModal();
 
 	// 770px
 	useEffect(() => {
@@ -69,9 +73,7 @@ export default function Navbar() {
 											: { display: 'none' }
 									}
 								>
-									<a onClick={handleModalToggle}>
-										User Links
-									</a>
+									<a onClick={handleModalToggle}>User Links</a>
 								</li>
 							</ul>
 						</nav>
@@ -81,10 +83,12 @@ export default function Navbar() {
 
 				{showBurger && <Burger handleClose={handleClose} />}
 			</div>
+
+			<Separator />
+
 			{openModal && (
 				<Modal open={openModal} onClose={() => setOpenModal(false)} />
 			)}
-			<Separator />
 		</nav>
 	);
 }

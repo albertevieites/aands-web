@@ -15,6 +15,7 @@ import Social from '../components/sections/Social/Social';
 import Story from '../components/sections/Story/Story';
 import Team from '../components/sections/Team/Team';
 import Separator from '../components/tokens/decorators/Separator/Separator';
+import { useModal } from '../context/ModalContext';
 
 // Helpers
 /* import { useIsomorphicLayoutEffect } from 'src/helpers/useIsomorphicLayoutEffect'; */
@@ -22,6 +23,8 @@ import Separator from '../components/tokens/decorators/Separator/Separator';
 /* gsap.registerPlugin(ScrollTrigger, ScrollSmoother); */
 
 export default function Home() {
+	const {openModal} = useModal();
+
 	/* const main = useRef(null);
 	const smoother = useRef(null); */
 
@@ -52,8 +55,7 @@ export default function Home() {
 			{/* add ref={main} inside main element */}
 			{/* <main id='smooth-wrapper'>
 				<div id='smooth-content'> */}
-			<main>
-				<div>
+				<main className='main--home' style={openModal ? {filter: 'blur(7px)'} : undefined}>
 					{/* Hero section */}
 					<Hero className='gsap__hero' dataSpeed='1' />
 					{/* Partners section */}
@@ -80,8 +82,7 @@ export default function Home() {
 					<Events />
 					{/* Last action section */}
 					<Last className='gsap__last' dataSpeed='1' />
-				</div>
-			</main>
+				</main>
 		</>
 	);
 }
