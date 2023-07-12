@@ -123,17 +123,17 @@ export const productData = [
 				src: '/images/products/advertisim/advertisim_3.png',
 				alt: 'avertisim photo detail',
 			},
-			{
+/* 			{
 				id: 304,
 				src: '/images/products/advertisim/advertisim_4.jpeg',
 				alt: 'avertisim photo detail',
-			},
+			}, */
 		],
 		product: 'Advertisim',
 		description:
 			'Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content.',
 		longDescription:
-			"The device is equipped with a high-resolution screen that displays real-time elevator information, including floor and direction, as well as targeted advertising content to help generate revenue. Its advanced monitoring system allows for early detection of elevator vibrations and potential malfunctions, ensuring the safety of passengers and preventing costly downtime.The device also offers various connectivity options, including Wi-Fi, Ethernet, and cellular, providing flexible and reliable communication with the elevator management system. Additionally, the device's independent positional device allows for precise and accurate tracking of the elevator's position and movement, providing valuable data for maintenance and operational analysis.",
+			"The device is equipped with a high-resolution screen that displays real-time elevator information, including floor and direction, as well as targeted advertising content to help generate revenue. Its advanced monitoring system allows for early detection of elevator vibrations and potential malfunctions, ensuring the safety of passengers and preventing costly downtime.The device also offers various connectivity options, including Wi-Fi, Ethernet, and cellular, providing flexible and reliable communication with the elevator management system.",
 		featureIcn: [
 			{
 				text: 'Visualization of floors',

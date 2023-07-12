@@ -56,12 +56,19 @@
 
 			color: $clr-goldweb;
 
+			border: 1px solid $clr-goldweb;
+			border-radius: 2px;
 			-moz-transition: all 0.2s ease-in;
 			-o-transition: all 0.2s ease-in;
 			-webkit-transition: all 0.2s ease-in;
 			transition: all 0.2s ease-in;
 
 			cursor: pointer;
+
+			&:hover {
+				background-color: $clr-goldweb;
+				color: $clr-background;
+			}
 		}
 	}
 }
