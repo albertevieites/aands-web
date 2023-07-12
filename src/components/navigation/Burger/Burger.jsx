@@ -8,12 +8,12 @@ import { MenuToggle } from '../MenuToggle/MenuToggle';
 
 // Context
 import { useModal } from '../../../context/ModalContext';
-import Modal from '../../tokens/modal/Modal';
+// import Modal from '../../tokens/modal/Modal';
 
 // BURGER COMPONENT
 export default function Burger() {
 	const [isOpen, setIsOpen] = useState(false);
-	const { openModal, setOpenModal } = useModal();
+	const { /* openModal, */ setOpenModal } = useModal();
 
 	// Function to handle opening menu in burger
 	const toggle = () => setIsOpen(!isOpen);
