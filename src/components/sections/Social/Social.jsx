@@ -1,6 +1,6 @@
-import SocialCard from "../../cards/SocialCard/SocialCard";
+// import SocialCard from "../../cards/SocialCard/SocialCard";
 
-import { socialData } from "../../../data/social";
+// import { socialData } from "../../../data/social";
 
 export default function Social({className, dataSpeed}) {
   return (
@@ -8,7 +8,7 @@ export default function Social({className, dataSpeed}) {
       className={`social ${className}`}
       data-speed={dataSpeed}
     >
-      <div className="social__container">
+      {/* <div className="social__container">
         <h2>We are Social</h2>
         <div className='social__grid'>
         {socialData.map(eachCard => (
@@ -22,7 +22,7 @@ export default function Social({className, dataSpeed}) {
           />
         ))}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

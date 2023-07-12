@@ -11,6 +11,10 @@
 	h1 {
 		margin-bottom: 1.9rem;
 
+		span {
+			color: $clr-goldweb;
+		}
+
 		@include nine__hundred {
 			font-size: 4.5rem;
 		}

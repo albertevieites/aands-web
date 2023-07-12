@@ -4,7 +4,7 @@ export const socialData = [
     "img": "/images/social/avatar-4.svg",
     "name": "Carlos Almeida",
     "comment": "Superb work and flawless. Nothing is too much trouble for these guys.",
-    "socialImg": "/icons/linkedin.svg",
+    "socialImg": "/icons/google.svg",
     "stars": "/icons/stars.svg",
   },
   {

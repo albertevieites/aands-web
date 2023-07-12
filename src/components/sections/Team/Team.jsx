@@ -1,4 +1,4 @@
-import TeamCard from "../../cards/TeamCard/TeamCard";
+// import TeamCard from "../../cards/TeamCard/TeamCard";
 
 export default function Team({className, dataSpeed}) {
   return (
@@ -6,10 +6,10 @@ export default function Team({className, dataSpeed}) {
       className={`team ${className}`}
       data-speed={dataSpeed}
       >
-				<div className="team__container">
+				{/* <div className="team__container">
           <h2>Meet the Team</h2>
           <TeamCard />
-        </div>
+        </div> */}
 			</section>
   )
 }

@@ -11,14 +11,10 @@ export default function Hero({className, dataSpeed}) {
 			data-speed={dataSpeed}
 		>
 			<div className='hero__message'>
-				<h1>Leading solutions for<br></br>
+				<h1>Innovative solutions for<br></br>
 					the <span>lift</span> industry
 				</h1>
-				<p>
-					We offer a wide range of <span>products</span> and services <br></br> to
-					maintain your <span>lift </span>
-					in the best condition.
-				</p>
+				<p>We offer competitive wide range of <span>IoT</span> solutions to support our<br></br>customers in their technological evolution from our <br></br>acquired <span>knowledge</span> in the lift industry systems.</p>
 			</div>
 			<ButtonProducts />
 					<Image

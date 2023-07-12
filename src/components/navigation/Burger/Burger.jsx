@@ -1,44 +1,49 @@
-import Link from 'next/link';
+// Moduls
 import { useState } from 'react';
 
+// Components
 import ButtonContact from '../../tokens/buttons/ContactBtn/ContactBtn';
 import ProductsBtn from '../../tokens/buttons/ProductsBtn/ProductsBtn';
 import { MenuToggle } from '../MenuToggle/MenuToggle';
 
+// Context
+import { useModal } from '../../../context/ModalContext';
+import Modal from '../../tokens/modal/Modal';
 
+// BURGER COMPONENT
 export default function Burger() {
-  const [isOpen, setIsOpen] = useState(false)
+	const [isOpen, setIsOpen] = useState(false);
+	const { openModal, setOpenModal } = useModal();
 
-  const toggle = () => setIsOpen(!isOpen);
+	// Function to handle opening menu in burger
+	const toggle = () => setIsOpen(!isOpen);
 
-  // Function to close the menu clicking on the buttons
-  const handleClose = () => {
-    setIsOpen(false);
-  }
+	// Function to close the menu clicking on the buttons
+	const handleClose = () => {
+		setIsOpen(false);
+	};
 
-  return (
-    <div className='burger'>
-      <MenuToggle isOpen={isOpen} toggle={toggle} />
-      {isOpen &&
-        <div className='burger__wrapper'>
-          <ul className='burger__list'>
-            <li>
-              <Link
-                onClick={handleClose}
-                href='#story'>Our Story</Link>
-            </li>
-            <li>
-              <Link
-                onClick={handleClose}
-                href='#ftex'>Events</Link>
-            </li>
-          </ul>
-          <div className="burger__btns">
-            <ProductsBtn handleClose={handleClose} />
-            <ButtonContact handleClose={handleClose} />
-          </div>
-        </div>
-      }
-    </div>
-  )
+	// Handle modal toggle clicking User Links anchor
+	const handleModalToggle = () => {
+		setOpenModal(prevState => !prevState);
+	};
+
+	return (
+		<div className='burger'>
+			<MenuToggle isOpen={isOpen} toggle={toggle} />
+			{isOpen && (
+				<div className='burger__wrapper'>
+					<ul className='burger__list'>
+						<li>
+							<a onClick={handleModalToggle}>User Links</a>
+						</li>
+					</ul>
+					<div className='burger__btns'>
+						<ProductsBtn handleClose={handleClose} />
+						<ButtonContact handleClose={handleClose} />
+					</div>
+				</div>
+			)}
+		</div>
+	);
 }
