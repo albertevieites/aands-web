@@ -29,6 +29,7 @@
     },
     "rules": {
         "react/prop-types": "off",
-        "import/no-absolute-path": "off"
+        "import/no-absolute-path": "off",
+        "react/no-unescaped-entities": "off"
     }
 }
