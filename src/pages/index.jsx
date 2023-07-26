@@ -6,15 +6,17 @@ import Head from 'next/head';
 /* import { useRef } from 'react'; */
 
 // Components
-import Events from '../components/sections/Events/Events';
-import Features from '../components/sections/Features/Features';
-import Hero from '../components/sections/Hero/Hero';
-import Last from '../components/sections/Last/Last';
-import Partners from '../components/sections/Partners/Partners';
-import Social from '../components/sections/Social/Social';
-import Story from '../components/sections/Story/Story';
-import Team from '../components/sections/Team/Team';
-import Separator from '../components/tokens/decorators/Separator/Separator';
+import Events from '@/components/sections/Events/Events';
+import Features from '@/components/sections/Features/Features';
+import Hero from '@/components/sections/Hero/Hero';
+import Last from '@/components/sections/Last/Last';
+import Partners from '@/components/sections/Partners/Partners';
+import Social from '@/components/sections/Social/Social';
+import Story from '@/components/sections/Story/Story';
+import Team from '@/components/sections/Team/Team';
+import Separator from '@/components/tokens/decorators/Separator/Separator';
+
+// Context
 import { useModal } from '../context/ModalContext';
 
 // Helpers

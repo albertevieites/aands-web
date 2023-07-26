@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 import Link from 'next/link';
-import AppleStore from '/public/logos/stores/apple.png';
-import GoogleStore from '/public/logos/stores/google.png';
+/* import AppleStore from '/public/logos/stores/apple.png';
+import GoogleStore from '/public/logos/stores/google.png'; */
 
 // MODAL CARD COMPONENT
 function ModalCard({ props }) {
@@ -26,12 +26,22 @@ function ModalCard({ props }) {
 				<div className='modal--card__stores--logos'>
 					{props.linkGoogle && (
 						<Link href={props.linkGoogle}>
-							<Image src={GoogleStore} alt='Google Store Logo' />
+							<Image
+								src='/logos/stores/google.png'
+								alt='Google Store Logo'
+								width={604}
+								height={200}
+							/>
 						</Link>
 					)}
 					{props.linkApple && (
 						<Link href={props.linkApple}>
-							<Image src={AppleStore} alt='Apple Store Logo' />
+							<Image
+								src='/logos/stores/apple.png'
+								alt='Apple Store Logo'
+								width={604}
+								height={200}
+							/>
 						</Link>
 					)}
 				</div>

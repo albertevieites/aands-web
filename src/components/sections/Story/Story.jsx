@@ -1,30 +1,59 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import OfficeImg from '/public/images/assets/office.svg'
+import OfficeImg from '/public/images/assets/office.svg';
 
 export default function Story({ className, dataSpeed }) {
 	return (
-		<section
-			id='story'
-			className={`story ${className}`}
-			data-speed={dataSpeed}
-		>
-			<div className="story__container">
+		<section id='story' className={`story ${className}`} data-speed={dataSpeed}>
+			<div className='story__container'>
 				<h2>Our Story (so far...)</h2>
 				<div className='story__content'>
-					<div className="story__content--image">
-						<Image
-							src={OfficeImg}
-							alt='office graphics'
-							width={500}
-						/>
+					<div className='story__content--image'>
+						<Image src={OfficeImg} alt='office graphics' width={500} />
 					</div>
-					<div className="story__content--text">
-						<p>A&S Lifts was founded in 1985 by two brothers, Alex and Sam, who had a passion for engineering and innovation. They started the company in a small garage in Maidenhead, where they would spend long hours tinkering with elevator parts and brainstorming new designs.</p>
-
-						<p>At first, the company struggled to gain traction, but as word spread about their high-quality elevators and excellent customer service, they began to attract more clients. One of their biggest early contracts was with a large hotel chain that wanted to replace all the outdated elevators in their properties with modern, efficient ones.</p>
-
-						<p>As A&S Lifts continued to grow, they expanded their operations to include maintenance and repair services, as well as custom elevator design for high-end residential properties. They also started to experiment with new technologies, such as remote monitoring and predictive maintenance, which helped them stay ahead of the curve in the industry.</p>
+					<div className='story__content--text'>
+						<p>
+							A&S Lifts has a rich history in the elevator industry, with a
+							background steeped in innovation and customer satisfaction.
+							Founded in 2019, A&S Lifts quickly established itself as a
+							reputable and reliable provider of elevator installation,
+							maintenance, and modernization services.
+						</p>
+						<p>
+							Over the past four years,A&S Lifts has transformed from a modest
+							local business to a prominent player in the national and
+							international elevator industry. What sets A&S Lifts apart is
+							their unwavering commitment to quality, safety, and cutting-edge
+							technology. They continuously strive to deliver state-of-the-art
+							elevator solutions that meet the evolving needs of their clients.
+						</p>
+						<p>
+							A&S Lifts boasts a team of highly skilled and experienced
+							engineers, technicians, and customer service representatives.
+							Every member of their team is dedicated to ensuring that each
+							project, whether it be a new installation or maintenance endeavor,
+							is executed seamlessly and to the highest standards.
+						</p>
+						<p>
+							Customer satisfaction is at the core of A&S Lifts' business
+							philosophy. They prioritize open communication, transparent
+							pricing, and prompt responses to client queries or concerns. A&S
+							Lifts' dedication to superior customer service has earned them a
+							loyal following and numerous long-term partnerships with clients
+							across various industries.
+						</p>
+						<p>
+							As the elevator industry continues to evolve, A&S Lifts remains at
+							the forefront of innovation. They actively invest in research and
+							development, consistently seeking out new technologies and
+							advancements that enhance elevator safety, energy efficiency, and
+							user experience.
+						</p>
+						<p>
+							With a commendable track record and an unwavering commitment to
+							excellence, A&S Lifts is well-positioned to continue shaping the
+							future of the elevator industry for years to come.
+						</p>
 					</div>
 				</div>
 			</div>
