@@ -1,5 +1,7 @@
+// DEPENDENCIES
 import { motion } from "framer-motion";
 
+// ANIMATION SETTINGS
 const Path = (props) => (
   <motion.path
     fill="transparent"
@@ -11,6 +13,7 @@ const Path = (props) => (
 
 const transition = { duration: 0.33 };
 
+// RENDER
 export function MenuToggle({ toggle, isOpen }) {
   return (
     <btn onClick={toggle}>

@@ -1,22 +1,22 @@
-// Modules
+// DEPENDENCIES
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-// Components
-import ContactBtn from '../../tokens/buttons/ContactBtn/ContactBtn';
-import Separator from '../../tokens/decorators/Separator/Separator';
+// COMPONENTS
+import ContactBtn from '@/components/tokens/buttons/ContactBtn/ContactBtn';
+import Separator from '@/components/tokens/decorators/Separator/Separator';
+import Modal from '@/components/tokens/modal/Modal';
 import Burger from '../Burger/Burger';
 
-// Images
-import Modal from '../../tokens/modal/Modal';
+// IMAGES
 import brandLogo from '/public/icons/aands.svg';
 
-// Context
-import { useModal } from '../../../context/ModalContext';
+// CONTEXT
+import { useModal } from '@/context/ModalContext';
 
-// NAVBAR COMPONENT
+// NAVBAR COMPONENT RENDER
 export default function Navbar() {
 	const router = useRouter();
 	const pathname = router.pathname;

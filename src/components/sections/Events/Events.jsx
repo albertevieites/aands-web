@@ -1,8 +1,11 @@
-import EventsCard from '../../cards/EventsCard/EventsCard';
+// COMPONENTS
+import EventsCard from '@/components/cards/EventsCard/EventsCard';
 
-import { eventsData } from '../../../data/events';
+// DATA
+import { eventsData } from '@/data/events';
 
-function Events() {
+// RENDER
+export default function Events() {
 	return (
 		<section className='events'>
 			<div className='events__container'>
@@ -23,5 +26,3 @@ function Events() {
 		</section>
 	);
 }
-
-export default Events;

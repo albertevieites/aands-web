@@ -1,7 +1,6 @@
-// import Image from "next/image";
 import { useRouter } from 'next/router';
 
-import ProductDetails from '../../components/cards/ProductDetails/ProductDetails';
+import ProductDetails from '@/components/cards/ProductDetails/ProductDetails';
 
 import { productData } from '../../data/products';
 
