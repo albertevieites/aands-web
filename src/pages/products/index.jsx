@@ -1,18 +1,34 @@
+// DEPENDENCIES
 import { useState } from 'react';
 
-import ProductCard from '../../components/cards/ProductCard/ProductCard';
-import ProductDetails from '../../components/cards/ProductDetails/ProductDetails';
-import Separator from '../../components/tokens/decorators/Separator/Separator';
+// COMPONENTS
+import ProductCard from '@/components/cards/ProductCard/ProductCard';
+import ProductDetails from '@/components/cards/ProductDetails/ProductDetails';
 
+// DATA
+import { productData } from '@/data/products';
 
+// RENDER
 export default function Products() {
 	const [selectedId, setSelectedId] = useState('');
 
 	return (
 		<>
-			<Separator />
 			<div className='products'>
-				<ProductCard selectedId={selectedId} setSelectedId={setSelectedId} />
+				{/* Single products <ProductCard /> */}
+				{productData.map(eachCard => (
+					<ProductCard
+						selectedId={selectedId}
+						setSelectedId={setSelectedId}
+						key={eachCard.id}
+						src={eachCard.src}
+						alt={eachCard.alt}
+						product={eachCard.product}
+						description={eachCard.description}
+						image={eachCard.img}
+						code={eachCard.code}
+					/>
+				))}
 
 				{/* <ProductDetails /> */}
 				<>

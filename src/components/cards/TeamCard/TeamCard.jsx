@@ -1,7 +1,10 @@
+// DEPENDENCIES
 import Image from 'next/image';
 
-import { teamData } from '../../../data/team';
+// DATA
+import { teamData } from '@/data/team';
 
+// RENDER
 export default function TeamCard() {
 	return (
 		<div className='team__grid'>

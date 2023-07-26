@@ -1,20 +1,21 @@
-// Modules
+// DEPENDENCIES
 import Image from 'next/image';
 import Link from 'next/link';
 // import { useRouter } from 'next/router';
 
-// Context
-import { useModal } from '../../../context/ModalContext';
+// CONTEXT
+import { useModal } from '@/context/ModalContext';
 
-// Components
-import CallBtn from '../../tokens/buttons/CallBtn/CallBtn';
+// COMPONENTS
+import CallBtn from '@/components/tokens/buttons/CallBtn/CallBtn';
 
-// Images
+// IMAGES
 import brandIcon from '/public/icons/aands.svg';
 import facebookIcon from '/public/icons/facebook.svg';
 import googleIcon from '/public/icons/google.svg';
 import linkedinIcon from '/public/icons/linkedin.svg';
 
+// RENDER
 export default function Footer() {
 	// const router = useRouter();
 	// const isHomePage = router.pathname === '/';
@@ -22,7 +23,10 @@ export default function Footer() {
 	const { openModal } = useModal();
 
 	return (
-		<footer className='footer' style={openModal ? {filter: 'blur(7px)'} : undefined}>
+		<footer
+			className='footer'
+			style={openModal ? { filter: 'blur(7px)' } : undefined}
+		>
 			<div className='footer__container'>
 				<div className='footer__top'>
 					<div className='footer__image'>

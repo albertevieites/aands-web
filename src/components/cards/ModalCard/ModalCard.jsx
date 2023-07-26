@@ -1,11 +1,11 @@
+// DEPENDENCIES
 import Image from 'next/image';
-
 import Link from 'next/link';
 /* import AppleStore from '/public/logos/stores/apple.png';
 import GoogleStore from '/public/logos/stores/google.png'; */
 
 // MODAL CARD COMPONENT
-function ModalCard({ props }) {
+export default function ModalCard({ props }) {
 	return (
 		<div className='modal--card' key={props.id}>
 			<div className='modal--card__logo'>
@@ -49,5 +49,3 @@ function ModalCard({ props }) {
 		</div>
 	);
 }
-
-export default ModalCard;

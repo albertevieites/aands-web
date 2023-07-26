@@ -66,8 +66,9 @@
 			cursor: pointer;
 
 			&:hover {
-				background-color: $clr-goldweb;
-				color: $clr-background;
+				color: $clr-goldweb;
+				-webkit-box-shadow: 0 0 1rem $clr-goldweb;
+				box-shadow: 0 0 1rem $clr-goldweb;
 			}
 		}
 	}

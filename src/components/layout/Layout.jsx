@@ -1,12 +1,14 @@
-import Footer from '../navigation/Footer/Footer';
-import Navbar from '../navigation/Navbar/Navbar';
+// COMPONENTS
+import Footer from '@/components/navigation/Footer/Footer';
+import Navbar from '@/components/navigation/Navbar/Navbar';
 
+// RENDER
 export default function Layout({ children }) {
 	return (
-		<div>
+		<>
 			<Navbar />
-			{children}
-      <Footer />
-		</div>
+			<main>{children}</main>
+			<Footer />
+		</>
 	);
 }

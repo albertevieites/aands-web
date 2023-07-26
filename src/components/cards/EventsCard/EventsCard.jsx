@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import Image from 'next/image';
 
-function EventsCard(props) {
+// RENDER
+export default function EventsCard(props) {
 	const { id, image, title, description, location, date } = props;
 
 	return (
@@ -21,5 +23,3 @@ function EventsCard(props) {
 		</div>
 	);
 }
-
-export default EventsCard;

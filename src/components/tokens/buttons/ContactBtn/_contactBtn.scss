@@ -9,8 +9,11 @@
 	padding: 0.7em 2.3em;
 	background-color: $clr-white;
 	border-radius: 0.2rem;
-  backdrop-filter: blur(1rem);
+	backdrop-filter: blur(1rem);
 
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in-out;
 
 	font-weight: $f-w-500;
@@ -22,7 +25,7 @@
 
 	&:hover {
 		background-color: $clr-white;
-    -webkit-box-shadow: 0 0 1rem $clr-white;
+		-webkit-box-shadow: 0 0 1rem $clr-white;
 		box-shadow: 0 0 1rem $clr-white;
 	}
 }

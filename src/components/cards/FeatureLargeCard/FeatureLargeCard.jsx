@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+// RENDER
 export default function FeatureLargeCard(props) {
   const { img1, img2, img3, legend, text } = props;
   const [showSecondImage, setShowSecondImage] = useState(true)

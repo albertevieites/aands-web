@@ -1,12 +1,12 @@
-// Moduls
+// DEPENDENCIES
 import { useState } from 'react';
 
-// Components
-import ButtonContact from '../../tokens/buttons/ContactBtn/ContactBtn';
-import ProductsBtn from '../../tokens/buttons/ProductsBtn/ProductsBtn';
+// COMPONENTS
+import ButtonContact from '@/components/tokens/buttons/ContactBtn/ContactBtn';
+import ProductsBtn from '@/components/tokens/buttons/ProductsBtn/ProductsBtn';
 import { MenuToggle } from '../MenuToggle/MenuToggle';
 
-// Context
+// CONTEXT
 import { useModal } from '../../../context/ModalContext';
 // import Modal from '../../tokens/modal/Modal';
 
