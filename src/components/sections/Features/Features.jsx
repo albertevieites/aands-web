@@ -30,8 +30,8 @@ export default function Features({ className, dataSpeed }) {
 				<div className='features__content'>
 					<FeatureLargeCard
 						className='features__container--grid-col-span-2'
-						img1={nearkeyImage}
-						img2={switchImage}
+						img1={gsrImage}
+						img2={gsmImage}
 						img3={advertisimImage}
 						legend='Increased Efficiency'
 						text='Technological lift products are designed with advanced safety features such as load sensors, emergency stop buttons, and automatic shut-off systems.'
@@ -52,8 +52,8 @@ export default function Features({ className, dataSpeed }) {
 					/>
 					<FeatureLargeCard
 						className='features__container--grid-col-span-2'
-						img1={gsrImage}
-						img2={gsmImage}
+						img1={nearkeyImage}
+						img2={switchImage}
 						img3={advertisimImage}
 						legend='Accesibility'
 						text='Many technological lift products are designed with easy-to-access components and built-in diagnostics, making maintenance and repairs.'
