@@ -6,7 +6,6 @@ import Link from 'next/link';
 import ButtonCall from '@/components/tokens/buttons/CallBtn/CallBtn';
 import Form from '@/components/utils/Form/Form';
 import Map from '@/components/utils/Map/Map';
-import Card from '../../components/animations/Card/Card';
 
 // IMAGES
 import CallIcon from '/public/icons/call.svg';
@@ -53,7 +52,6 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			{/* <Card /> */}
 		</>
 	);
 }
