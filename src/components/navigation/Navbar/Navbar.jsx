@@ -55,7 +55,7 @@ export default function Navbar() {
 	// NAVBAR COMPONENT RENDERING
 	return (
 		<nav className='navbar'>
-			<div className='navbar__top'>
+			<div className='navbar__container'>
 				<div className='navbar__brand'>
 					<Link href='/'>
 						<Image src={brandLogo} alt='Brand Logo' />

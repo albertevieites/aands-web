@@ -3,9 +3,11 @@ import FeatureLargeCard from '@/components/cards/FeatureLargeCard/FeatureLargeCa
 import FeatureSmallCard from '@/components/cards/FeatureSmallCard/FeatureSmallCard';
 
 // Large Card Imports IMAGES
-import advertisimImage from '/public/images/products/advertisim/advertisim_3.png';
-import gsmImage from '/public/images/products/gsm/gsm_1.png';
+import nearkeyImage from '/public/images/products/nearkey/nearkey_4.png';
 import switchImage from '/public/images/products/switch/switch_1.png';
+import advertisimImage from '/public/images/products/advertisim/advertisim_3.png';
+import gsrImage from '/public/images/products/gsr/gsr_5.png';
+import gsmImage from '/public/images/products/gsm/gsm_5.png';
 
 // Small Card Imported IMAGES
 import communicationIcon from '/public/icons/communication.svg';
@@ -28,7 +30,7 @@ export default function Features({ className, dataSpeed }) {
 				<div className='features__content'>
 					<FeatureLargeCard
 						className='features__container--grid-col-span-2'
-						img1={gsmImage}
+						img1={nearkeyImage}
 						img2={switchImage}
 						img3={advertisimImage}
 						legend='Increased Efficiency'
@@ -50,8 +52,8 @@ export default function Features({ className, dataSpeed }) {
 					/>
 					<FeatureLargeCard
 						className='features__container--grid-col-span-2'
-						img1={gsmImage}
-						img2={switchImage}
+						img1={gsrImage}
+						img2={gsmImage}
 						img3={advertisimImage}
 						legend='Accesibility'
 						text='Many technological lift products are designed with easy-to-access components and built-in diagnostics, making maintenance and repairs.'

@@ -1,25 +1,24 @@
+// DEPENDENCIES
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Components
-import ButtonCall from '../../components/tokens/buttons/CallBtn/CallBtn';
-import Form from '../../components/utils/Form/Form';
-import Map from '../../components/utils/Map/Map';
-import Separator from '../../components/tokens/decorators/Separator/Separator';
+// COMPONENTS
+import ButtonCall from '@/components/tokens/buttons/CallBtn/CallBtn';
+import Form from '@/components/utils/Form/Form';
+import Map from '@/components/utils/Map/Map';
+import Card from '../../components/animations/Card/Card';
 
-// Images
+// IMAGES
 import CallIcon from '/public/icons/call.svg';
 import EmailIcon from '/public/icons/email.svg';
 import MapIcon from '/public/icons/map.svg';
-// import Connectivity from '../../components/animations/Connectivity/Connectivity';
-import Card from '../../components/animations/Card/Card';
 
+// CONTACT COMPONENT RENDER
 export default function Contact() {
 	return (
 		<>
-			<Separator />
 			<div className='contact'>
-				<div className="contact__container">
+				<div className='contact__container'>
 					<h3>Get in touch!</h3>
 					<div className='contact__content'>
 						<div className='contact__touch'>
@@ -54,7 +53,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<Card />
+			{/* <Card /> */}
 		</>
 	);
 }
