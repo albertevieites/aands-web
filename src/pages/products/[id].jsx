@@ -1,9 +1,13 @@
+// DEPENDENCIES
 import { useRouter } from 'next/router';
 
+// COMPONENTS
 import ProductDetails from '@/components/cards/ProductDetails/ProductDetails';
 
-import { productData } from '../../data/products';
+// DATA
+import { productData } from '@/data/products';
 
+// RENDER
 export default function DetailsPage() {
 	const router = useRouter();
 	const { id } = router.query;
