@@ -8,9 +8,9 @@ import Form from '@/components/utils/Form/Form';
 import Map from '@/components/utils/Map/Map';
 
 // IMAGES
-import CallIcon from '/public/icons/call.svg';
-import EmailIcon from '/public/icons/email.svg';
-import MapIcon from '/public/icons/map.svg';
+import CallIcon from '/public/icons/details/call.svg';
+import EmailIcon from '/public/icons/details/email.svg';
+import MapIcon from '/public/icons/details/map.svg';
 
 // CONTACT COMPONENT RENDER
 export default function Contact() {

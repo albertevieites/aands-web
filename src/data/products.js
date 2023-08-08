@@ -32,27 +32,27 @@ export const productData = [
 		featureIcn: [
 			{
 				text: 'Emergency phone line',
-				src: '/icons/features/emergency.svg',
+				src: '/icons//emergency.svg',
 			},
 			{
 				text: 'Wifi connectivity',
-				src: '/icons/features/wifi.svg',
+				src: '/icons/details/wifi.svg',
 			},
 			{
 				text: "Integration with Nayar System's services",
-				src: '/icons/features/integration.svg',
+				src: '/icons/details/integration.svg',
 			},
 			{
 				text: 'Elevator connection: controller, VVVF',
-				src: '/icons/features/elevator.svg',
+				src: '/icons/details/elevator.svg',
 			},
 			{
 				text: 'Customizable software',
-				src: '/icons/features/customize.svg',
+				src: '/icons/details/customize.svg',
 			},
 			{
 				text: 'GSR PDF',
-				src: '/icons/features/pdf.svg',
+				src: '/icons/details/pdf.svg',
 			},
 		],
 	},
@@ -84,23 +84,23 @@ export const productData = [
 		featureIcn: [
 			{
 				text: 'App available for iOS and Android devices',
-				src: '/icons/features/app.svg',
+				src: '/icons/details/app.svg',
 			},
 			{
 				text: 'Maximum security access',
-				src: '/icons/features/security.svg',
+				src: '/icons/details/security.svg',
 			},
 			{
 				text: 'Works without an internet connection',
-				src: '/icons/features/no_internet.svg',
+				src: '/icons/details/no_internet.svg',
 			},
 			{
 				text: 'Data and hour restrictions',
-				src: '/icons/features/restrictionshield.svg',
+				src: '/icons/details/restrictionshield.svg',
 			},
 			{
 				text: 'Nerakey PDF',
-				src: '/icons/features/pdf.svg',
+				src: '/icons/details/pdf.svg',
 			},
 		],
 	},
@@ -137,43 +137,43 @@ export const productData = [
 		featureIcn: [
 			{
 				text: 'Visualization of floors',
-				src: '/icons/features/eye.svg',
+				src: '/icons/details/eye.svg',
 			},
 			{
 				text: 'Display special signals',
-				src: '/icons/features/bell-alert.svg',
+				src: '/icons/details/bell-alert.svg',
 			},
 			{
 				text: 'Headlines',
-				src: '/icons/features/t-box.svg',
+				src: '/icons/details/t-box.svg',
 			},
 			{
 				text: 'Floor description',
-				src: '/icons/features/arrows.svg',
+				src: '/icons/details/arrows.svg',
 			},
 			{
 				text: 'Weather information',
-				src: '/icons/features/sun-thermometer.svg',
+				src: '/icons/details/sun-thermometer.svg',
 			},
 			{
 				text: 'Images and videos',
-				src: '/icons/features/hd.svg',
+				src: '/icons/details/hd.svg',
 			},
 			{
 				text: 'Twitter',
-				src: '/icons/features/twitter.svg',
+				src: '/icons/details/twitter.svg',
 			},
 			{
 				text: 'Multimedia news',
-				src: '/icons/features/multimedia.svg',
+				src: '/icons/details/multimedia.svg',
 			},
 			{
 				text: 'Image editor',
-				src: '/icons/features/image-edit.svg',
+				src: '/icons/details/image-edit.svg',
 			},
 			{
 				text: 'Flight information',
-				src: '/icons/features/takeoff.svg',
+				src: '/icons/details/takeoff.svg',
 			},
 		],
 	},
@@ -204,17 +204,17 @@ export const productData = [
 			'GSM offers high-speed communication with industrial machinery, providing real-time data transfer and control, even in remote and harsh environments. With its 5 Ethernet ports, USB connectivity, and Linux OS, it provides a versatile and flexible solution for a wide range of industrial applications.The device is easy to set up, with a user-friendly interface and intuitive navigation, allowing for quick and seamless integration into existing systems. Additionally, its secure communications ensure that data is transmitted and stored securely, protecting sensitive information and preventing unauthorized access.',
 		featureIcn: [
 			{
-				src: '/icons/google.svg',
+				src: '/icons/social/google.svg',
 				alt: 'google',
 				text: 'Google',
 			},
 			{
-				src: '/icons/linkedin.svg',
+				src: '/icons/social/linkedin.svg',
 				alt: 'linkedin',
 				text: 'LinkedIn',
 			},
 			{
-				src: '/icons/facebook.svg',
+				src: '/icons/social/facebook.svg',
 				alt: 'facebook',
 				text: 'Facebook',
 			},
@@ -237,17 +237,17 @@ export const productData = [
 			'Nayar Switch provides a revolutionary solution for elevator cabins, offering fast and reliable internet access via existing elevator hose. This innovative technology eliminates the need for additional cabling, making it an affordable and safe option for elevators of all sizes.In addition to its internet connectivity, Nayar Switch also offers WiFi or Ethernet connectivity, allowing for a seamless integration into existing network infrastructure. This provides a reliable and secure connection, allowing elevator passengers to access the internet, check their emails, or stream videos while they wait.',
 		featureIcn: [
 			{
-				src: '/icons/google.svg',
+				src: '/icons/social/google.svg',
 				alt: 'google',
 				text: 'Google',
 			},
 			{
-				src: '/icons/linkedin.svg',
+				src: '/icons/social/linkedin.svg',
 				alt: 'linkedin',
 				text: 'LinkedIn',
 			},
 			{
-				src: '/icons/facebook.svg',
+				src: '/icons/social/facebook.svg',
 				alt: 'facebook',
 				text: 'Facebook',
 			},
@@ -270,17 +270,17 @@ export const productData = [
 			'The Pulse app by Nayar Systems is a game-changer in the elevator industry, offering a modern and convenient way to call elevators. With the ability to call elevators using a smartphone, users no longer have to rely on physical buttons, saving time and enhancing the overall experience.The app works offline, ensuring reliable and seamless operation even in areas with poor internet connectivity. The app requires the installation of a BVA device in the lift car and on each floor, providing real-time information and control of the elevator.',
 		featureIcn: [
 			{
-				src: '/icons/google.svg',
+				src: '/icons/social/google.svg',
 				alt: 'google',
 				text: 'Google',
 			},
 			{
-				src: '/icons/linkedin.svg',
+				src: '/icons/social/linkedin.svg',
 				alt: 'linkedin',
 				text: 'LinkedIn',
 			},
 			{
-				src: '/icons/facebook.svg',
+				src: '/icons/social/facebook.svg',
 				alt: 'facebook',
 				text: 'Facebook',
 			},
