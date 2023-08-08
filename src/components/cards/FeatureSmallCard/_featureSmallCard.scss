@@ -3,15 +3,14 @@
 @use '../../../styles/abstracts/mixins' as *;
 
 .card--small {
-	position: relative;
+	display: grid;
+	align-items: center;
+	gap: 2rem;
 
+	padding: 2rem;
 	background-color: $clr-card;
 	border: 0.01rem solid $clr-border-card;
 	border-radius: 2rem;
-
-	@include twelve__hundred {
-		padding-bottom: 20rem;
-	}
 
 	@include nine__hundred {
 		display: none;
@@ -31,38 +30,14 @@
 		letter-spacing: 0.02rem;
 	}
 
-	& > * {
-		position: absolute;
-	}
-
-	&__content {
-		position: inherit;
-		top: 18rem;
-
-		margin: 0 2rem;
-	}
-
 	&__icon {
-		left: 33%;
+		width: 43%;
+		height: 50%;
+		margin: 0 auto;
 
-		width: 8em;
-		height: auto;
-
-		@include twelve__hundred {
-			left: 29%;
-
-			width: 45%;
-		}
-	}
-
-	&__bg {
-		top: 5rem;
-		left: 13%;
-
-		@include twelve__hundred {
-			left: 0%;
-			width: 100%;
-			padding: 0 2rem;
+		img {
+			width: fit-content;
+			height: auto;
 		}
 	}
 }

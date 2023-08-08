@@ -10,8 +10,8 @@ import gsrImage from '/public/images/products/gsr/gsr_5.png';
 import gsmImage from '/public/images/products/gsm/gsm_5.png';
 
 // Small Card Imported IMAGES
-import communicationIcon from '/public/icons/communication.svg';
-import connectivityIcon from '/public/icons/connectivity.svg';
+import friendlyIcon from '/public/icons/features/friendly.svg';
+import connectivityIcon from '/public/icons/features/connectivity.svg';
 import dotsVector from '/public/images/assets/spiral-dots.svg';
 import wiresVector from '/public/images/assets/wires.svg';
 
@@ -46,7 +46,7 @@ export default function Features({ className, dataSpeed }) {
 					<FeatureSmallCard
 						className='communication'
 						imgBg={dotsVector}
-						imgIcn={communicationIcon}
+						imgIcn={friendlyIcon}
 						title='User Friendly'
 						text='User friendly dedicated platforms available 24 hours.'
 					/>

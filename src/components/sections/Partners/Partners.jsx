@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import nayarLogo from '/public/icons/nayar.svg';
+import nayarLogo from '/public/logos/brands/nayar.svg';
 
 export default function Partners({className, dataSpeed}) {
   return (
