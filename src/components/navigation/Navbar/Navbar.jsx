@@ -11,7 +11,7 @@ import Modal from '@/components/tokens/modal/Modal';
 import Burger from '../Burger/Burger';
 
 // IMAGES
-import brandLogo from '/public/icons/aands.svg';
+import brandLogo from '/public/logos/brands/aands.svg';
 
 // CONTEXT
 import { useModal } from '@/context/ModalContext';

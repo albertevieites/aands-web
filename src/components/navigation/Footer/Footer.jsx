@@ -10,10 +10,10 @@ import { useModal } from '@/context/ModalContext';
 import CallBtn from '@/components/tokens/buttons/CallBtn/CallBtn';
 
 // IMAGES
-import brandIcon from '/public/icons/aands.svg';
-import facebookIcon from '/public/icons/facebook.svg';
-import googleIcon from '/public/icons/google.svg';
-import linkedinIcon from '/public/icons/linkedin.svg';
+import brandLogo from '/public/logos/brands/aands.svg';
+import facebookIcon from '/public/icons/social/facebook.svg';
+import googleIcon from '/public/icons/social/google.svg';
+import linkedinIcon from '/public/icons/social/linkedin.svg';
 
 // RENDER
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
 			<div className='footer__container'>
 				<div className='footer__top'>
 					<div className='footer__image'>
-						<Image src={brandIcon} alt='brand icon' />
+						<Image src={brandLogo} alt='brand icon' />
 						<h4>A&S Lifts</h4>
 					</div>
 					<div className='footer__talk'>
