@@ -1,9 +1,5 @@
 // Import from node_modules
-/* import { gsap } from 'gsap';
-import { ScrollSmoother } from 'gsap/dist/ScrollSmoother';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'; */
 import Head from 'next/head';
-/* import { useRef } from 'react'; */
 
 // Components
 import Events from '@/components/sections/Events/Events';
@@ -19,34 +15,8 @@ import Separator from '@/components/tokens/decorators/Separator/Separator';
 // Context
 import { useModal } from '../context/ModalContext';
 
-// Helpers
-/* import { useIsomorphicLayoutEffect } from 'src/helpers/useIsomorphicLayoutEffect'; */
-
-/* gsap.registerPlugin(ScrollTrigger, ScrollSmoother); */
-
 export default function Home() {
 	const {openModal} = useModal();
-
-	/* const main = useRef(null);
-	const smoother = useRef(null); */
-
-	/* useIsomorphicLayoutEffect(() => {
-		const ctx = gsap.context(() => {
-			smoother.current = ScrollSmoother.create({
-				smooth: 1,
-				effects: true,
-				smoothTouch: 0.1,
-			});
-			ScrollTrigger.create({
-				trigger: '.gsap__features',
-				pin: '.gsap__features',
-				start: 'center bottom',
-				end: '+=300',
-				markers: true,
-			});
-		}, main);
-		return () => ctx.revert();
-	}, []); */
 
 	return (
 		<>
@@ -57,7 +27,7 @@ export default function Home() {
 			{/* add ref={main} inside main element */}
 			{/* <main id='smooth-wrapper'>
 				<div id='smooth-content'> */}
-				<main className='main--home' style={openModal ? {filter: 'blur(7px)'} : undefined}>
+				<div className='main--home' style={openModal ? {filter: 'blur(7px)'} : undefined}>
 					{/* Hero section */}
 					<Hero className='gsap__hero' dataSpeed='1' />
 					{/* Partners section */}
@@ -84,7 +54,7 @@ export default function Home() {
 					<Events />
 					{/* Last action section */}
 					<Last className='gsap__last' dataSpeed='1' />
-				</main>
+				</div>
 		</>
 	);
 }

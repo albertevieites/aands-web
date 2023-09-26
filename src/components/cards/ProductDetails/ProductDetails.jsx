@@ -1,15 +1,21 @@
 // DEPENDENCIES
+import PdfBtn from '@/components/tokens/buttons/PdfBtn/PdfBtn';
 import Image from 'next/image';
 import { useState } from 'react';
 
 // RENDER
-export default function ProductDetails(props) {
-	const { product, longDescription, img, featureIcn } = props.details;
+export default function ProductDetails({details}) {
+	const { product, longDescription, img, featureIcn, pdf } = details;
 	const [selectedImg, setSelectedImg] = useState(img[0]);
 
-	const handleClick = newImg => {
+	const handleHover= newImg => {
 		setSelectedImg(newImg);
 	};
+
+	// Handle line breaks
+	function replaceWithBr() {
+		return longDescription.replace(/\n/g, "<br /><br />");
+	}
 
 	return (
 		<div className='product--details'>
@@ -25,12 +31,13 @@ export default function ProductDetails(props) {
 									width={500}
 									height={500}
 									className={selectedImg.id === image.id ? 'active' : ''}
-									onClick={() => handleClick(image)}
+									onMouseOver={() => handleHover(image)}
 								/>
 							</div>
 						);
 					})}
 				</div>
+
 				<div className='product--details__image'>
 					<Image
 						src={selectedImg.src}
@@ -44,10 +51,10 @@ export default function ProductDetails(props) {
 			<div className='product--details__content'>
 				<div className='product--details__content--text'>
 					<h3>{product}</h3>
-					<p>{longDescription}</p>
+					<p dangerouslySetInnerHTML={{__html: replaceWithBr()}} />
 				</div>
 
-				<div className='product--details__content--features'>
+{/* 				<div className='product--details__content--features'>
 					{featureIcn.map(icon => {
 						return (
 							<div key={icon.id} className='product--details__content--icon'>
@@ -56,9 +63,9 @@ export default function ProductDetails(props) {
 							</div>
 						);
 					})}
-				</div>
+				</div> */}
 
-				<a href='./pdf/datasheet_advertisim.pdf'>PDF</a>
+				<PdfBtn pdf={pdf} />
 			</div>
 		</div>
 	);

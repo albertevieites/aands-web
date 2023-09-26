@@ -5,22 +5,22 @@ export const productData = [
 		img: [
 			{
 				id: 101,
-				src: '/images/products/gsr/GSR_1.png',
+				src: '/images/products/gsr/GSR_1.jpg',
 				alt: 'GSR photo detail',
 			},
 			{
 				id: 102,
-				src: '/images/products/gsr/GSR_2.png',
+				src: '/images/products/gsr/GSR_2.jpg',
 				alt: 'GSR photo detail',
 			},
 			{
 				id: 103,
-				src: '/images/products/gsr/GSR_3.png',
+				src: '/images/products/gsr/GSR_3.jpg',
 				alt: 'GSR photo detail',
 			},
 			{
 				id: 104,
-				src: '/images/products/gsr/GSR_4.png',
+				src: '/images/products/gsr/GSR_4.jpg',
 				alt: 'GSR photo detail',
 			},
 		],
@@ -28,7 +28,7 @@ export const productData = [
 		description:
 			'GSR · GSM - Smart Router is a device specially designed for the elevator industry and IoT networks.',
 		longDescription:
-			'GSR – Gsm Smart Router is the first IoT communications device for the elevation sector, developed entirely by Nayar. With an increasing volume of data the market demands a multipurpose device with higher speed, both processing and data transmission. GSR - IoT device for elevator sector, provides compliance, control connection, telemetry, telecontrol, WiFi and customization for a complete solution.',
+			'GSR or GSM Smart Router is a device that connects lift controllers and machines bringing the data recorded in each of its installations closer to the user. Data that needs to be transformed into information in order to be understood.\n The dedicated online management platform net4machines Smart Control telemetry is a service that allows you to control and configure compatible lift manoeuvres through a virtual console with all the functions of the physical console, all of this remotely. A two-way communication that allows the user to obtain more extensive knowledge of the lift status in real time and considerably reduce the number of trips to the equipment’s location. \n The automation of processes leads us to the effectiveness, and with it to the reduction of times and costs.',
 		featureIcn: [
 			{
 				text: 'Emergency phone line',
@@ -55,6 +55,7 @@ export const productData = [
 				src: '/icons/details/pdf.svg',
 			},
 		],
+		pdf: '/pdf/GSR-GSM.pdf'
 	},
 	{
 		id: 2,
@@ -75,12 +76,17 @@ export const productData = [
 				src: '/images/products/nearkey/nearkey_3.jpg',
 				alt: 'nearkey photo detail',
 			},
+			{
+				id: 204,
+				src: '/images/products/nearkey/nearkey_3.jpg',
+				alt: 'nearkey photo detail',
+			},
 		],
 		product: 'Nearkey',
 		description:
 			'Nearkey is an access control device for electric drivesusing the smartphone. It substitutes keys and physical remotes for virtual ones.',
 		longDescription:
-			'With Nearkey, users can easily grant access to guests, family members or employees, with the ability to monitor and manage all accesses in real-time from their smartphone. The keyless technology eliminates the need for physical keys, making it convenient and hassle-free for users. Additionally, Nearkey is equipped with advanced security features such as encrypted communication and secure access codes, providing peace of mind and protection against unauthorized access.',
+			'Nearkey is an access control device for electric locks, gates, lift buttons and more using the smartphone Bluetooth connectivity. Nearkey does not require internet connection to work once set up is completed. \n It replaces keys, fobs, access cards and physical remotes for virtual ones. \n The system is fully customisable and allows the management of users and groups in the cloud, ensuring maximum security and total control. Access can be customised to the required needs of each individual user of the facility that is controlled.',
 		featureIcn: [
 			{
 				text: 'App available for iOS and Android devices',
@@ -103,6 +109,7 @@ export const productData = [
 				src: '/icons/details/pdf.svg',
 			},
 		],
+		pdf: '/pdf/Nearkey.pdf'
 	},
 	{
 		id: 3,
@@ -123,17 +130,17 @@ export const productData = [
 				src: '/images/products/advertisim/advertisim_3.png',
 				alt: 'avertisim photo detail',
 			},
-/* 			{
-				id: 304,
-				src: '/images/products/advertisim/advertisim_4.jpeg',
-				alt: 'avertisim photo detail',
-			}, */
+			/* 			{
+							id: 304,
+							src: '/images/products/advertisim/advertisim_4.jpeg',
+							alt: 'avertisim photo detail',
+						}, */
 		],
 		product: 'Advertisim',
 		description:
 			'Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content.',
 		longDescription:
-			"The device is equipped with a high-resolution screen that displays real-time elevator information, including floor and direction, as well as targeted advertising content to help generate revenue. Its advanced monitoring system allows for early detection of elevator vibrations and potential malfunctions, ensuring the safety of passengers and preventing costly downtime.The device also offers various connectivity options, including Wi-Fi, Ethernet, and cellular, providing flexible and reliable communication with the elevator management system.",
+			"Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content, wherever the device is located. At the same time, it provides feedback to the user about the use of the elevator, ensuring that the passenger’s experience is excellent. This model includes in a native way connectivity to controllers with connection type CAN, 485 and binary. \n This Advertisim product includes the screen and all the electronic components in one device, all mounted within a semi-embedded bracket that can be fitted behind existing lift car finishes and can easily be converted into a surface screen. The surface mount allows minimal modification to the existing finishes in the lift cabin. \n For more information see the installation manual.",
 		featureIcn: [
 			{
 				text: 'Visualization of floors',
@@ -176,6 +183,7 @@ export const productData = [
 				src: '/icons/details/takeoff.svg',
 			},
 		],
+		pdf: '/pdf/Advertisim.pdf'
 	},
 	{
 		id: 4,

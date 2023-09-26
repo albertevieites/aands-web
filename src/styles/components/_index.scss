@@ -26,10 +26,11 @@
 @forward '../../components/sections/Story/story';
 @forward '../../components/sections/Team/team';
 
-
+// Tokens
 @forward '../../components/tokens/buttons/CallBtn/callBtn';
 @forward '../../components/tokens/buttons/ContactBtn/contactBtn';
 @forward '../../components/tokens/buttons/DetailsBtn/detailsBtn';
+@forward '../../components/tokens/buttons/PdfBtn/pdfBtn';
 @forward '../../components/tokens/buttons/ProductsBtn/productsBtn';
 @forward '../../components/tokens/decorators/Line/line';
 @forward '../../components/tokens/decorators/Separator/separator';
