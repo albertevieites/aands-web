@@ -8,12 +8,15 @@ import ButtonDetails from '@/components/tokens/buttons/DetailsBtn/DetailsBtn';
 export default function ProductCard(props) {
 	const { key, product, description, image, code } = props;
 
+	const lastImage = image.length -1;
+	console.log(lastImage);
+
 	return (
 		<div key={key} className='product--card'>
 			<div className='product--card__image'>
 				<Image
-					src={image[0].src}
-					alt={image[0].alt}
+					src={image[lastImage].src}
+					alt={image[lastImage].alt}
 					width={1000}
 					height={1000}
 				/>
