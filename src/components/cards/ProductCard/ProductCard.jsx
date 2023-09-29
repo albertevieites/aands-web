@@ -6,17 +6,14 @@ import ButtonDetails from '@/components/tokens/buttons/DetailsBtn/DetailsBtn';
 
 // RENDER
 export default function ProductCard(props) {
-	const { key, product, description, image, code } = props;
-
-	const lastImage = image.length -1;
-	console.log(lastImage);
+	const { key, product, description, imageProduct, code } = props;
 
 	return (
 		<div key={key} className='product--card'>
 			<div className='product--card__image'>
 				<Image
-					src={image[lastImage].src}
-					alt={image[lastImage].alt}
+					src={imageProduct}
+					alt={`${code} icon`}
 					width={1000}
 					height={1000}
 				/>

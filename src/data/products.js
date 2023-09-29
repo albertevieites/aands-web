@@ -2,6 +2,7 @@ export const productData = [
 	{
 		id: 1,
 		code: 'gsr',
+		imgProduct: '/images/products/gsr/GSR_5.png',
 		img: [
 			{
 				id: 101,
@@ -21,11 +22,6 @@ export const productData = [
 			{
 				id: 104,
 				src: '/images/products/gsr/GSR_4.jpg',
-				alt: 'GSR photo detail',
-			},
-			{
-				id: 105,
-				src: '/images/products/gsr/GSR_5.png',
 				alt: 'GSR photo detail',
 			},
 		],
@@ -65,6 +61,7 @@ export const productData = [
 	{
 		id: 2,
 		code: 'nearkey',
+		imgProduct: '/images/products/nearkey/Nearkey_5.png',
 		img: [
 			{
 				id: 201,
@@ -84,11 +81,6 @@ export const productData = [
 			{
 				id: 204,
 				src: '/images/products/nearkey/Nearkey_4.jpg',
-				alt: 'nearkey photo detail',
-			},
-			{
-				id: 205,
-				src: '/images/products/nearkey/Nearkey_5.png',
 				alt: 'nearkey photo detail',
 			},
 		],
@@ -124,6 +116,7 @@ export const productData = [
 	{
 		id: 3,
 		code: 'advertisim',
+		imgProduct: '/images/products/advertisim/Advertisim_5.png',
 		img: [
 			{
 				id: 301,
