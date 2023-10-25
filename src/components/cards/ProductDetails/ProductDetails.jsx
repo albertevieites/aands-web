@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 // RENDER
 export default function ProductDetails({ details }) {
-	const { product, longDescription, img, featureIcn, pdf } = details;
+	const { product, longDescription, img, pdf } = details;
 	const [selectedImg, setSelectedImg] = useState(img[0]);
 
 	// Handle hover over thumbnail images
